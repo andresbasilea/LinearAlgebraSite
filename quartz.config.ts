@@ -47,8 +47,8 @@ const config: QuartzConfig = {
           dark: "#6ec3d6", //explorer, graph view, backlinks
           secondary: "#FFFFFF", // main link
           tertiary: "#c1f9ff", // elements inside explorer
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          highlight: "rgba(47, 160, 230, 0.55)",
+          textHighlight: "rgb(48,150,48)",
         },
       },
     },
