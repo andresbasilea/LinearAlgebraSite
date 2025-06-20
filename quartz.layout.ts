@@ -1,11 +1,21 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
-import * as Component from "./quartz/components"
+import * as Component from "./quartz/components" // Ensure this line is present and correct
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  // --- ADDITION START ---
+  afterBody: [
+    // Add your custom IframeThemeSwitcher component here
+    // It will appear after the main body content on all pages
+    Component.IframeThemeSwitcher({
+      lightSrc: "threed_example_background.html", // Your light theme HTML file
+      darkSrc: "threed_example_360.html",       // Your dark theme HTML file (ensure .html if it is!)
+      minWidth: "485px",                       // Optional: customize if needed
+    }),
+  ],
+  // --- ADDITION END ---
   footer: Component.Footer({
     links: {
       
