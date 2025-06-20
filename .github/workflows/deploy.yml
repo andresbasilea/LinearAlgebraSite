@@ -111,7 +111,7 @@ jobs:
         run: |
           # Create the target directory if it doesn't exist
           mkdir -p public/manim-slides
-          manim-slides convert --one-file ${{ env.SCENES }} public/manim-slides/index.html
+          manim-slides convert --one-file "${{ env.FILE }}" "${{ env.SCENES }}" public/manim-slides/index.html
           # I've chosen 'public/manim-slides/index.html' as an example.
           # This means you'll link to it as '/manim-slides/' or '/manim-slides/index.html' on your site.
           # If you want to use the scene name:
