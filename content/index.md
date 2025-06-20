@@ -1,6 +1,6 @@
 ---
-title: Welcome to Quartz
+title: ¡Bienvenid@ al curso de Álgebra Lineal!
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Esta es la página de inicio del curso de Álgebra Lineal. 
+[[Grupos]]
