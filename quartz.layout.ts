@@ -6,15 +6,7 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   // --- ADDITION START ---
-  afterBody: [
-    // Add your custom IframeThemeSwitcher component here
-    // It will appear after the main body content on all pages
-    Component.IframeThemeSwitcher({
-      lightSrc: "threed_example_background.html", // Your light theme HTML file
-      darkSrc: "threed_example_360.html",       // Your dark theme HTML file (ensure .html if it is!)
-      minWidth: "485px",                       // Optional: customize if needed
-    }),
-  ],
+  afterBody: [],
   // --- ADDITION END ---
   footer: Component.Footer({
     links: {

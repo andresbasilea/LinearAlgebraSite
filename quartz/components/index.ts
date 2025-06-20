@@ -23,8 +23,6 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
-import IframeThemeSwitcher from "./IframeThemeSwitcher" // Import your new component
-
 
 export {
   ArticleTitle,
@@ -51,6 +49,5 @@ export {
   Breadcrumbs,
   Comments,
   Flex,
-  ConditionalRender,
-  IframeThemeSwitcher
+  ConditionalRender
 }
