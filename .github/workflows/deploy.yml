@@ -41,7 +41,10 @@ jobs:
           # This example assumes files like 'public/threed_example'
           # If they are in subdirectories, adjust the 'find' command path.
           find public/ -type f -name "threed_example" -exec mv {} {}.html \;
-          find public/ -type f -name "wow" -exec mv {} {}.html \;
+          find public/ -type f -name "threed_example_360" -exec mv {} {}.html \;
+          find public/ -type f -name "threed_example_background" -exec mv {} {}.html \;
+          find public/ -type f -name "convert_example_light" -exec mv {} {}.html \;
+
           # Add more if other files are affected
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
