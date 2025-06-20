@@ -21,6 +21,8 @@ env:
   SCENES: 'ThreeDExample'  # Space-separated list of scenes to render
   USES_TEX: true  # true or false - disabling this will make the action run faster
   DISPLAY: :99  # Do not touch this
+  # Define a temporary output directory for Manim videos
+  MANIM_VIDEO_OUTPUT_DIR: 'temp_manim_renders' 
 
 jobs:
   build:
@@ -39,9 +41,7 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
 
-      # --- Manim Setup & Build (MOVED HERE) ---
-      # This entire section was previously in your 'deploy' job.
-      # It must run *before* the 'Upload artifact' step so Manim's output is included.
+      # --- Manim Setup & Render (MOVED HERE AND MODIFIED) ---
       - name: Install Python
         uses: actions/setup-python@v4
         with:
@@ -102,23 +102,35 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r ./content/requirements.txt
 
-      - name: Build Manim Slides HTML
-        # IMPORTANT: Output the Manim Slides HTML directly into the Quartz 'public' directory
-        # This makes it part of the artifact that gets uploaded to GitHub Pages.
-        # You need to decide the exact path within 'public'.
-        # For example, to put it in 'public/my_manim_slides.html' (if it's your main slides)
-        # OR 'public/presentations/my_manim_slides.html' if you want it in a subfolder.
-        run: |
-          # Create the target directory if it doesn't exist
-          mkdir -p public/manim-slides
-          manim-slides convert --one-file "${{ env.FILE }}" "${{ env.SCENES }}" public/manim-slides/index.html
-          # I've chosen 'public/manim-slides/index.html' as an example.
-          # This means you'll link to it as '/manim-slides/' or '/manim-slides/index.html' on your site.
-          # If you want to use the scene name:
-          # manim-slides convert --one-file ${{ env.SCENES }} public/manim-slides/${{ env.SCENES }}.html
-          # Then link to it as '/manim-slides/ThreeDExample.html'
-      # --- END Manim Setup & Build ---
+      - name: Render Manim Video(s)
+        # Use manim to render the scene(s) to a controlled output directory
+        # -ql for low quality, faster render for GitHub Actions; you can adjust if needed
+        # --output_directory specifies where Manim puts its 'media' folder
+        run: ${{ env.MANIM }} -ql --output_directory ${{ env.MANIM_VIDEO_OUTPUT_DIR }} ${{ env.FILE }} ${{ env.SCENES }}
 
+      - name: Build Manim Slides HTML
+        run: |
+          # Create the final target directory inside Quartz's 'public' output folder
+          mkdir -p public/manim-slides
+          
+          # Construct the exact path to the rendered scene's folder within MANIM_VIDEO_OUTPUT_DIR
+          # Manim's default output structure is typically:
+          # <output_directory>/videos/<Python_file_name_without_extension>/<SceneName>/<resolution>/
+          # For example: temp_manim_renders/videos/example_py/ThreeDExample/1080p/
+          
+          # This variable will hold the path to the folder Manim Slides expects.
+          # Adjust if your Manim version/config has a different default output structure
+          RENDERED_SCENE_PATH="${{ env.MANIM_VIDEO_OUTPUT_DIR }}/videos/$(basename ${{ env.FILE }} .py)/${{ env.SCENES }}"
+          
+          echo "Attempting to convert from Manim's output folder: $RENDERED_SCENE_PATH"
+          
+          # Now, tell manim-slides to convert from this *folder*
+          manim-slides convert --one-file "$RENDERED_SCENE_PATH" public/manim-slides/index.html
+          
+          # Optional: List contents to debug if the path is still incorrect
+          echo "Contents of $RENDERED_SCENE_PATH:"
+          ls -F "$RENDERED_SCENE_PATH" || true # `|| true` prevents step from failing if dir is empty/non-existent for ls
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -136,5 +148,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      # Removed: The Manim-related steps were here previously and caused the problem.
-      # You do NOT need to checkout again or install Manim/Python here, as the artifact is already built.
+      # Removed: Manim-related steps are now in the 'build' job
