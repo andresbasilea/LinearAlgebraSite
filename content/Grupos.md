@@ -1,6 +1,6 @@
 Este es el recurso para estudiar grupos.
 
-Prueba
+Prueba 2
 
 <div style="position:relative;padding-bottom:56.25%;">
     <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
