@@ -1,1 +1,2 @@
 Este es el recurso para estudiar grupos.
+s
