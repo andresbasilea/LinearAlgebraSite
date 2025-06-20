@@ -1,3 +1,27 @@
+name: Deploy Quartz site to GitHub Pages
+ 
+on:
+  push:
+    branches:
+      - v4
+ 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+ 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+ 
+# No need for Manim-specific environment variables if generating locally
+# env:
+#   FILE: './content/example.py'
+#   MANIM: 'manim'
+#   SCENES: 'ThreeDExample'
+#   USES_TEX: true
+#   DISPLAY: :99
+ 
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -5,123 +29,18 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all history for git info
-
-      # --- Quartz Setup & Build ---
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Install Quartz Dependencies
+      - name: Install Dependencies
         run: npm ci
-      - name: Build Quartz
+      - name: Build Quartz # This will copy your pre-generated Manim HTML from 'content' to 'public'
         run: npx quartz build
-
-      # --- Manim Setup & Render ---
-      - name: Install Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-          cache: pip
-
-      - name: Install manim dependencies on Ubuntu
-        if: ${{ env.MANIM == 'manim' }}
-        run: |
-          sudo apt-get update
-          sudo apt-get install libcairo2-dev libpango1.0-dev ffmpeg freeglut3-dev
-
-      - name: Install manimgl dependencies on Ubuntu
-        if: ${{ env.MANIM == 'manimgl' }}
-        run: |
-          sudo apt-get update
-          sudo apt-get install libpango1.0-dev ffmpeg freeglut3-dev xvfb
-          nohup Xvfb $DISPLAY &
-
-      - name: Setup TeX Live
-        if: ${{ env.USES_TEX == 'true' }}
-        uses: teatimeguest/setup-texlive-action@v3
-        with:
-          packages: >-
-            amsmath
-            babel-english
-            cbfonts-fd
-            cm-super
-            count1to
-            ctex
-            doublestroke
-            dvisvgm
-            everysel
-            fontspec
-            frcursive
-            fundus-calligra
-            gnu-freefont
-            jknapltx
-            latex-bin
-            mathastext
-            microtype
-            multitoc
-            physics
-            prelim2e
-            preview
-            ragged2e
-            relsize
-            rsfs
-            setspace
-            standalone
-            tipa
-            wasy
-            wasysym
-            xcolor
-            xetex
-            xkeyval
-
-      - name: Install Python dependencies
-        run: pip install -r ./content/requirements.txt
-
-      - name: Render Manim Video(s)
-        # Removed --output_directory. Manim will place videos in its default 'media/' structure.
-        # -ql for low quality, fast render.
-        run: ${{ env.MANIM }} -ql ${{ env.FILE }} ${{ env.SCENES }}
-
-      - name: Build Manim Slides HTML
-        run: |
-          # Create the final target directory inside Quartz's 'public' output folder
-          mkdir -p public/manim-slides
-          
-          # Construct the exact path to the rendered scene's *folder* that manim-slides expects.
-          # Manim's default output structure is typically:
-          # media/videos/<Python_file_name_without_extension>/<SceneName>/<resolution>/
-          # We need to dynamically find the resolution folder.
-          
-          MANIM_FILE_NAME_NO_EXT=$(basename "${{ env.FILE }}" .py)
-          
-          # Find the actual resolution directory Manim created.
-          # This handles cases where the resolution might not be exactly '1080p'
-          # It looks for any directory (type d) under the scene's path ending in 'p' (e.g., 480p, 720p, 1080p).
-          # The `-mindepth 1 -maxdepth 1` ensures it only finds direct subdirectories.
-          RESOLUTION_DIR=$(find "media/videos/${MANIM_FILE_NAME_NO_EXT}/${{ env.SCENES }}" -maxdepth 1 -mindepth 1 -type d -name "*p" -print -quit)
-
-          if [ -z "$RESOLUTION_DIR" ]; then
-            echo "ERROR: Could not find a resolution directory inside media/videos/${MANIM_FILE_NAME_NO_EXT}/${{ env.SCENES }}"
-            echo "This means Manim might not have rendered the video as expected, or its output path is different."
-            echo "Check the 'Render Manim Video(s)' step for errors and Manim's output logs."
-            exit 1
-          fi
-
-          RENDERED_SCENE_INPUT_PATH="$RESOLUTION_DIR"
-          
-          echo "Attempting to convert from Manim's output folder: $RENDERED_SCENE_INPUT_PATH"
-          
-          # Now, tell manim-slides to convert from this *folder* containing the video.
-          # The --one-file flag is still correct for embedding everything.
-          manim-slides convert --one-file "$RENDERED_SCENE_INPUT_PATH" public/manim-slides/index.html
-          
-          echo "Contents of $RENDERED_SCENE_INPUT_PATH (should contain .mp4):"
-          ls -F "$RENDERED_SCENE_INPUT_PATH" || true # `|| true` prevents step from failing if dir is empty/non-existent for ls
-          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public # This is crucial. It uploads everything in 'public', including your Manim Slides.
-
+          path: public # This path contains your entire Quartz site + your Manim HTML
+ 
   deploy:
     needs: build
     permissions: write-all
@@ -133,5 +52,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-      # Removed: Manim-related steps are now entirely in the 'build' job
+      # No need for checkout, Python, Manim, or TeX installations here either
