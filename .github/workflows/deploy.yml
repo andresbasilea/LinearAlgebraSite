@@ -36,6 +36,13 @@ jobs:
         run: npm ci
       - name: Build Quartz # This will copy your pre-generated Manim HTML from 'content' to 'public'
         run: npx quartz build
+      - name: Add .html extensions if missing
+        run: |
+          # This example assumes files like 'public/threed_example'
+          # If they are in subdirectories, adjust the 'find' command path.
+          find public/ -type f -name "threed_example" -exec mv {} {}.html \;
+          find public/ -type f -name "test" -exec mv {} {}.html \;
+          # Add more if other files are affected
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
