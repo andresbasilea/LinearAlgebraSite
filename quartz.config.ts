@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "〈Á,L〉",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -40,13 +40,13 @@ const config: QuartzConfig = {
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
+          light: "rgba(0,0,0,1)",
+          lightgray: "rgb(48, 48, 48)",
           gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
+          darkgray: "rgb(255, 255, 255)", //normal text
+          dark: "#6ec3d6", //explorer, graph view, backlinks
+          secondary: "#FFFFFF", // main link
+          tertiary: "#c1f9ff", // elements inside explorer
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#b3aa0288",
         },
