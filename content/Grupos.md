@@ -11,7 +11,7 @@ Prueba 3
         height="100%"
         allowfullscreen
         allow="autoplay"
-        src="threed_example.html">
+        src="'/manim-slides/ThreeDExample.html'">
     </iframe>
 </div>
 
