@@ -2,8 +2,7 @@ Este es el recurso para estudiar grupos.
 
 Prueba 3
 
-<div style="position:relative;padding-bottom:56.25%;">
-    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
+<!-- <div style="position:relative;padding-bottom:56.25%;">
     <iframe
         style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
         frameborder="0"
@@ -15,5 +14,50 @@ Prueba 3
     </iframe>
 </div>
 
+<div style="position:relative;padding-bottom:56.25%;">
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="threed_example.html">
+    </iframe>
+</div>
 
+<div style="position:relative;padding-bottom:56.25%;">
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="threed_example.html">
+    </iframe>
+</div>
 
+<div style="position:relative;padding-bottom:56.25%; min-width: 200px;"> 
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="threed_example.html">
+    </iframe>
+</div> -->
+
+<div style="position:relative;padding-bottom:56.25%; min-width: 500px;">
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="threed_example.html">
+    </iframe>
+</div>
