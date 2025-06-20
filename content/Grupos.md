@@ -11,8 +11,8 @@ Prueba 3
         height="100%"
         allowfullscreen
         allow="autoplay"
-        src="about:blank" data-light-src="threed_example_background.html"
-        data-dark-src="threed_example_360.html">
+        src="threed_example_background.html" data-light-src="threed_example_background.html"
+        data-dark-src="threed_example.html">
     </iframe>
 </div>
 
