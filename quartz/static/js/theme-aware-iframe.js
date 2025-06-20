@@ -1,34 +1,32 @@
 // static/js/theme-aware-iframe.js
 
-// This is a plain JavaScript file (.js) to avoid HTML entity encoding issues.
+// This script now handles both:
+// 1. Initial iframe source setting on DOMContentLoaded.
+// 2. Subsequent iframe source changes when the theme is toggled.
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the iframe element by its ID
-    // Use the ID you set in your Markdown file.
+(function() {
     const iframe = document.getElementById('theme-aware-iframe-viewer');
-    const htmlElement = document.documentElement; // For checking light/dark class on <html>
-
-    // IMPORTANT: Check if the iframe exists on *this specific page*.
-    // If this script is loaded on a page without the iframe, it will gracefully do nothing.
+    
+    // If the iframe element isn't found on this particular page, exit.
     if (!iframe) {
-        // console.log("Iframe with ID 'theme-aware-iframe-viewer' not found on this page. Script will not run.");
+        console.log("theme-aware-iframe.js: Iframe element not found. Script will not activate.");
         return; 
     }
-    console.log("Iframe element found by theme-aware-iframe.js:", iframe);
+    console.log("theme-aware-iframe.js: Iframe element found.");
 
-    // Retrieve the light and dark sources from the iframe's data attributes
     const lightSrc = iframe.dataset.lightSrc;
     const darkSrc = iframe.dataset.darkSrc;
     
-    // Basic validation: ensure data attributes are present
     if (!lightSrc || !darkSrc) {
-        console.warn("WARNING (theme-aware-iframe.js): 'data-light-src' or 'data-dark-src' attributes are missing on the iframe. Theme switching may not work for this instance.");
+        console.warn("WARNING (theme-aware-iframe.js): 'data-light-src' or 'data-dark-src' attributes are missing on the iframe. Theme switching may not work.");
         return;
     }
-    console.log(`Configured Light Source for iframe: ${lightSrc}`);
-    console.log(`Configured Dark Source for iframe: ${darkSrc}`);
 
-    // Function to update the iframe's source based on the current theme
+    /**
+     * Updates the iframe's source URL based on the provided theme.
+     * It appends a cache-busting timestamp to ensure the browser reloads the content.
+     * @param {string} theme - The new theme to apply ("light" or "dark").
+     */
     function updateIframeSource(theme) {
         let newSrc;
         if (theme === 'dark') {
@@ -37,29 +35,44 @@ document.addEventListener('DOMContentLoaded', function() {
             newSrc = lightSrc;
         }
 
-        // Compare only the base URL (ignoring any existing query parameters)
-        // to prevent unnecessary reloads if the src is already correct.
+        // Only update if the base src has changed, add cache-busting timestamp
         if (iframe.src.split('?')[0] !== newSrc) {
-            const timestamp = new Date().getTime(); // Append a unique timestamp to force reload (cache-busting)
+            const timestamp = new Date().getTime(); 
             iframe.src = `${newSrc}?_t=${timestamp}`;
-            console.log(`Iframe source updated to: ${iframe.src}`);
+            console.log(`theme-aware-iframe.js: Iframe source updated to: ${iframe.src}`);
         } else {
-            console.log(`Iframe source already set to ${newSrc}, no change needed.`);
+            console.log(`theme-aware-iframe.js: Iframe source already set to ${newSrc}, no change needed.`);
         }
     }
 
-    // --- Initial Theme Check on Page Load ---
-    // This runs once when the page initially loads to set the correct iframe src based on the default theme.
-    const initialTheme = htmlElement.classList.contains('dark') ? 'dark' : 'light';
-    console.log("Initial theme detected by theme-aware-iframe.js (on DOMContentLoaded): " + initialTheme);
-    updateIframeSource(initialTheme);
+    // --- Logic for Initial Page Load (DOMContentLoaded) ---
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('theme-aware-iframe.js: DOMContentLoaded fired. Determining initial theme.');
+        
+        let initialIsDark = false;
+        const storedTheme = localStorage.getItem('quartz-theme'); // Check localStorage first
 
-    // --- Listen for Quartz's custom 'themechange' event ---
-    // This handles theme changes that happen after the page is loaded (e.g., user clicks the theme toggle).
+        if (storedTheme === 'dark') {
+            initialIsDark = true;
+            console.log('Initial theme from localStorage: dark');
+        } else if (storedTheme === 'light') {
+            initialIsDark = false;
+            console.log('Initial theme from localStorage: light');
+        } else {
+            // Fallback to system preference if no explicit choice in localStorage
+            initialIsDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            console.log('Initial theme from system preference: ' + (initialIsDark ? 'dark' : 'light'));
+        }
+        const initialTheme = initialIsDark ? 'dark' : 'light';
+        
+        updateIframeSource(initialTheme);
+    });
+
+    // --- Logic for Subsequent Theme Changes (themechange event) ---
     document.addEventListener("themechange", (e) => {
-        // 'e.detail.theme' contains the new theme ("light" or "dark")
-        const newTheme = e.detail.theme; 
-        console.log("Quartz 'themechange' event fired. New theme: " + newTheme);
+        const customEvent = e; // Cast to CustomEvent if using TypeScript directly
+        const newTheme = customEvent.detail.theme; 
+        console.log("theme-aware-iframe.js: Quartz 'themechange' event fired. New theme: " + newTheme);
         updateIframeSource(newTheme);
     });
-});
+})();
