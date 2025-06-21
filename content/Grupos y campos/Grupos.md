@@ -38,3 +38,14 @@ Sea $(A, \ast)$ un grupo
 </div>
 
 
+
+### Estructura de grupo
+
+  Sea $A$ un conjunto no vacío y sea $*$ una operación binaria definida en $A$. Se dice que el sistema $(A, \ast)$ tiene estructura de grupo si se cumplen los siguientes axiomas: 
+
+  - **1) Cerradura:** $\forall a, b \in A$ $(a \ast b) \in A$ 
+  - **2) Asociatividad:** $\forall a, b, c \in A$ $a \ast (b \ast c) = (a \ast b) \ast c$ 
+  - **3) Existencia del elemento idéntico:** $\forall a \in A; \exists e \in A \mid a \ast e = e \ast a = a$ 
+  - **4) Existencia de elementos inversos:** $\forall a \in A; \exists i \in A \mid a \ast i = i \ast a = e$ 
+  
+  Si alguno de los axiomas no se cumple, entonces el sistema $(A, \ast)$ no tendrá estructura de grupo.

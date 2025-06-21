@@ -44,6 +44,10 @@ jobs:
           find public/ -type f -name "threed_example_360" -exec mv {} {}.html \;
           find public/ -type f -name "threed_example_background" -exec mv {} {}.html \;
           find public/ -type f -name "convert_example_light" -exec mv {} {}.html \;
+          find public/ -type f -name "simple_linear_trasnformation1" -exec mv {} {}.html \;
+          find public/ -type f -name "how_think_vectors" -exec mv {} {}.html \;
+
+
 
           # Add more if other files are affected
       - name: Upload artifact
