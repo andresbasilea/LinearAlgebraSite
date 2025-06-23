@@ -46,6 +46,7 @@ jobs:
           find public/ -type f -name "convert_example_light" -exec mv {} {}.html \;
           find public/ -type f -name "simple_linear_trasnformation1" -exec mv {} {}.html \;
           find public/ -type f -name "how_think_vectors" -exec mv {} {}.html \;
+          find public/ -type f -name "intro" -exec mv {} {}.html \;
 
 
 

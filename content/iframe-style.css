@@ -1,0 +1,20 @@
+/* Styles specifically for the responsive iframe container */
+.responsive-iframe-container {
+    position: relative;
+    min-width: 400px;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */ /* Make it take 100% of its parent's available width */
+    height: 0; /* Ensures padding-bottom defines the element's height */
+    overflow: hidden; /* Hides anything that might spill out */
+    box-sizing: border-box; /* Ensures padding doesn't add to the total width/height */
+    /* *** IMPORTANT: DO NOT add min-width here if you want it to shrink on mobile *** */
+}
+
+/* Styles for the iframe element itself, making it fill its container */
+.responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    min-width: 400px;
+    left: 0; /* Make the iframe fill the width of its container */
+    height: 100%; /* Make the iframe fill the height of its container */
+    border: none; /* Removes the default iframe border */
+}
