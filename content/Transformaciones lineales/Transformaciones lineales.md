@@ -142,7 +142,7 @@ $$
 
 ### Transformaciones no lineales
 
->[!danger]
+>[!danger] ¿Alguna vez te preguntaste?
 >¿Por qué el álgebra lineal se limita al estudio de las transformaciones lineales?
 >¿Cómo se ve una transformación no lineal?
 
