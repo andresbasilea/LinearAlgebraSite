@@ -75,10 +75,10 @@
         height: '100%',
         // Factor of the display size that should remain empty around
         // the content
-        margin: 0.04,
+        margin: 0,
         // Bounds for smallest/largest possible scale to apply to content
         minScale: 0.01,
-        maxScale: 3.0,
+        maxScale: 2.0,
         // Display presentation control arrows
         controls: false,
         // Help the user learn the controls by providing hints, for example by
@@ -189,7 +189,7 @@
         // - null:   Media will only autoplay if data-autoplay is present
         // - true:   All media will autoplay, regardless of individual setting
         // - false:  No media will autoplay, regardless of individual setting
-        autoPlayMedia: null,
+        autoPlayMedia: true,
         // Global override for preloading lazy-loaded iframes
         // - null:   Iframes with data-src AND data-preload will be loaded when within
         //           the viewDistance, iframes with only data-src will be loaded when visible

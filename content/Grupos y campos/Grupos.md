@@ -24,9 +24,9 @@ Sea $(A, \ast)$ un grupo
 
 
 ### Ejemplo de animación de grupo
-<div style="position:relative;padding-bottom:56.25%; margin: 0 auto;">
+<div style="position:relative;padding-bottom:56.25%;">
+    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
     <iframe
-        id="theme-aware-iframe-viewer"
         style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
         frameborder="0"
         width="100%"
