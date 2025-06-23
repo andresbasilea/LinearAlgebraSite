@@ -48,6 +48,8 @@ jobs:
           find public/ -type f -name "how_think_vectors" -exec mv {} {}.html \;
           find public/ -type f -name "intro" -exec mv {} {}.html \;
           find public/ -type f -name "no_lineal" -exec mv {} {}.html \;
+          find public/ -type f -name "cizalla" -exec mv {} {}.html \;
+
 
 
 
