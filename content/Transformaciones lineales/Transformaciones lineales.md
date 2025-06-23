@@ -8,6 +8,22 @@ $\forall \: \vec{u}, \:  \vec{v} \: \in \: V$ y $\forall \: \alpha \: \in \: K$
 - **Homogeneidad**: 
 	-  $T(\alpha\vec{u}) = \alpha T(\vec{u})$
 
+
+#### Ejemplos de transformaciones lineales
+<div style="position:relative;padding-bottom:56.25%;">
+    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="_transformaciones/cizalla.html">
+    </iframe>
+</div>
+
+
 ### Transformaciones no lineales
 - ¿Por qué el álgebra lineal se limita al estudio de las transformaciones lineales? 
 - ¿Cómo se ve una transformación no lineal?
