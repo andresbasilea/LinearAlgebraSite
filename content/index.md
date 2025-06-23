@@ -3,18 +3,7 @@ title: Álgebra Lineal
 ---
 ![[image 1.png]]
 
-<div style="position:relative;padding-bottom:56.25%;">
-    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
-    <iframe
-        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
-        frameborder="0"
-        width="100%"
-        height="100%"
-        allowfullscreen
-        allow="autoplay"
-        src="intro.html">
-    </iframe>
-</div>
+
 
 <!-- <div class="responsive-iframe-container">
     <iframe
@@ -53,3 +42,15 @@ title: Álgebra Lineal
 ### Operadores lineales en espacios con producto interno
 [[Operadores lineales en espacios con producto interno]]
 
+<div style="position:relative;padding-bottom:56.25%;">
+    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="intro.html">
+    </iframe>
+</div>
