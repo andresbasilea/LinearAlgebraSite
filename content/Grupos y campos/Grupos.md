@@ -24,7 +24,7 @@ Sea $(A, \ast)$ un grupo
 
 
 ### Ejemplo de animación de grupo
-<div style="position:relative;padding-bottom:56.25%; min-width: 485px; margin: 0 auto;">
+<div style="position:relative;padding-bottom:56.25%; margin: 0 auto;">
     <iframe
         id="theme-aware-iframe-viewer"
         style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
