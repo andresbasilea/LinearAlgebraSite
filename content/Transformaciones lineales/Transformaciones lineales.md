@@ -9,7 +9,7 @@ $\forall \: \vec{u}, \:  \vec{v} \: \in \: V$ y $\forall \: \alpha \: \in \: K$
 	-  $T(\alpha\vec{u}) = \alpha T(\vec{u})$
 
 
-#### Ejemplos de transformaciones lineales
+#### Ejemplo de transformación lineal de "cizalla"
 <div style="position:relative;padding-bottom:56.25%;">
     <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
     <iframe
@@ -22,6 +22,53 @@ $\forall \: \vec{u}, \:  \vec{v} \: \in \: V$ y $\forall \: \alpha \: \in \: K$
         src="_transformaciones/cizalla.html">
     </iframe>
 </div>
+
+
+#### Ejemplo de transformación lineal de rotación
+<div style="position:relative;padding-bottom:56.25%;">
+    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="_transformaciones/rotacion.html">
+    </iframe>
+</div>
+
+
+#### Ejemplo de transformación lineal de rotación y escalamiento en tres dimensiones
+<div style="position:relative;padding-bottom:56.25%;">
+    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="_transformaciones/rotacion3Dbasica.html">
+    </iframe>
+</div>
+
+
+#### Ejemplo de transformación lineal de rotación y escalamiento en tres dimensiones
+<div style="position:relative;padding-bottom:56.25%;">
+    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="_transformaciones/rotacion3D.html">
+    </iframe>
+</div>
+
+
 
 
 ### Transformaciones no lineales
@@ -37,6 +84,6 @@ $\forall \: \vec{u}, \:  \vec{v} \: \in \: V$ y $\forall \: \alpha \: \in \: K$
         height="100%"
         allowfullscreen
         allow="autoplay"
-        src="no_lineal.html">
+        src="_transformaciones/no_lineal.html">
     </iframe>
 </div>

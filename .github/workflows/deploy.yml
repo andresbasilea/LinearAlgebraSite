@@ -49,6 +49,8 @@ jobs:
           find public/ -type f -name "intro" -exec mv {} {}.html \;
           find public/ -type f -name "no_lineal" -exec mv {} {}.html \;
           find public/ -type f -name "cizalla" -exec mv {} {}.html \;
+          find public/ -type f -name "rotacion" -exec mv {} {}.html \;
+          find public/ -type f -name "rotacion3D" -exec mv {} {}.html \;
 
 
 
