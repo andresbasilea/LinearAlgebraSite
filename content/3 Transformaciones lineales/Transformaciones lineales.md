@@ -171,7 +171,7 @@ $$
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="top"
-        data-theme="light_high_contrast"
+        data-theme="noborder_light"
         data-lang="es"
         crossorigin="anonymous"
         async>

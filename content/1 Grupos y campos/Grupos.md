@@ -63,7 +63,7 @@ Sea $(A, \ast)$ un grupo
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="top"
-        data-theme="light"
+        data-theme="noborder_light"
         data-lang="es"
         crossorigin="anonymous"
         async>
