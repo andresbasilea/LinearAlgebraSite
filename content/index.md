@@ -32,13 +32,13 @@ comments: "false"
 [[Introducción al álgebra lineal]]
 
 ### Grupos
-[[Grupos]]
+[[1 Grupos]]
 
 ### Campos
-[[Campos]]
+[[2 Campos]]
 
 ### Espacios Vectoriales
-[[Espacios vectoriales]]
+[[1 Espacios vectoriales]]
 
 ### Transformaciones lineales
 [[Transformaciones lineales]]
