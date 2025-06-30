@@ -17,6 +17,8 @@ Este es el recurso para estudiar campos.
 <script src="/static/js/theme-aware-iframe.js"></script>
 
 
+
+
 <script src="https://giscus.app/client.js"
         data-repo="andresbasilea/LinearAlgebraSite"
         data-repo-id="R_kgDOO-oDkA"
@@ -27,7 +29,7 @@ Este es el recurso para estudiar campos.
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="top"
-        data-theme="noborder_light"
+        data-theme="light"
         data-lang="es"
         crossorigin="anonymous"
         async>
