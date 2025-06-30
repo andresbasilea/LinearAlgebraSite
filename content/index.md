@@ -32,22 +32,26 @@ comments: "false"
 [[Introducción al álgebra lineal]]
 
 ### Grupos
-[[1 Grupos]]
+[[1 Grupos|Grupos]]
 
 ### Campos
-[[2 Campos]]
+[[2 Campos|Campos]]
 
 ### Espacios Vectoriales
-[[1 Espacios vectoriales]]
+[[1 Espacios vectoriales|Espacios vectoriales]]
+- [[2 Subespacio vectorial|Subespacio vectorial]]
+- [[3 Combinación lineal, dependencia lineal y generadores y bases|Combinación lineal, dependencia lineal y generadores y bases]]
+- [[4 Isomorfismo entre espacios vectoriales|Isomorfismo entre espacios vectoriales]]
+- [[5 Matriz de transición|Matriz de transición]]
 
 ### Transformaciones lineales
-[[Transformaciones lineales]]
+[[1 Transformaciones lineales]]
 
 ### Espacios con producto interno
-[[Espacios con producto interno]]
+[[1 Espacios con producto interno]]
 
 ### Operadores lineales en espacios con producto interno
-[[Operadores lineales en espacios con producto interno]]
+[[1 Operadores lineales en espacios con producto interno]]
 
 ### Sobre la clase
 [[Sobre la clase]]
