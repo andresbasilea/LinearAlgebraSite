@@ -26,7 +26,7 @@ Este es el recurso para estudiar campos.
         data-strict="0"
         data-reactions-enabled="1"
         data-emit-metadata="0"
-        data-input-position="bottom"
+        data-input-position="top"
         data-theme="light"
         data-lang="es"
         crossorigin="anonymous"
