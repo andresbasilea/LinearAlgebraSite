@@ -6,7 +6,22 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   // --- ADDITION START ---
-  afterBody: [],
+  afterBody: [ 
+    Component.Comments({
+    provider: 'giscus',
+    options: {
+      // from data-repo
+      repo: 'jackyzha0/quartz',
+      // from data-repo-id
+      repoId: 'MDEwOlJlcG9zaXRvcnkzODcyMTMyMDg',
+      // from data-category
+      category: 'Announcements',
+      // from data-category-id
+      categoryId: 'DIC_kwDOFxRnmM4B-Xg6',
+      // from data-lang
+      lang: 'en'
+    }
+  }),],
   // --- ADDITION END ---
   footer: Component.Footer({
     links: {

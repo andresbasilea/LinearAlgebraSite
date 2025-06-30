@@ -1,5 +1,6 @@
 ---
 title: Álgebra Lineal
+comments: "false"
 ---
 ![[image 1.png]]
 
@@ -25,6 +26,10 @@ title: Álgebra Lineal
 	- Usa la tecla "**F**" para desplegar la animación en tamaño completo. 
     - Usa la tecla "**esc**" para mostrar todas las escenas de cada animación.
 	- En un dispositivo móvil, puedes swipear a la izquierda y derecha para regresar o adelantar la animación.
+
+
+### Introducción al álgebra lineal
+[[Introducción al álgebra lineal]]
 
 ### Grupos
 [[Grupos]]
