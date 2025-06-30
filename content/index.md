@@ -20,8 +20,10 @@ title: Álgebra Lineal
 - Encontrarás debajo los links a cada tema visto en clase. Encontrarás además links a recursos interesantes, las presentaciones en pdf, etc. }
 
 - **Sobre las animaciones**: 
+    - Posiciona en pantalla una animación y dale click
 	- Usa las flechas de tu teclado para regresar o adelantar la animación. 
 	- Usa la tecla "**F**" para desplegar la animación en tamaño completo. 
+    - Usa la tecla "**esc**" para mostrar todas las escenas de cada animación.
 	- En un dispositivo móvil, puedes swipear a la izquierda y derecha para regresar o adelantar la animación.
 
 ### Grupos
@@ -41,6 +43,9 @@ title: Álgebra Lineal
 
 ### Operadores lineales en espacios con producto interno
 [[Operadores lineales en espacios con producto interno]]
+
+### Sobre la clase
+[[Sobre la clase]]
 
 <div style="position:relative;padding-bottom:56.25%;">
     <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
