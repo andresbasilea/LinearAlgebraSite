@@ -3,11 +3,24 @@
 ### Adición y multiplicación por un escalar
 
 Sean $V$ y $W$ dos espacios vectoriales definidos sobre un campo $K$, y sean $T: V \rightarrow W$ y $H: V \rightarrow W$ dos transformaciones lineales. 
-1. La suma $T+H$ de $T$ y $H$ es una transformación lineal de $V$ en $W$ definida por: $$ (T+H)(\vec{v}) = T(\vec{v}) + H(\vec{v}) \quad ; \quad \forall \, \vec{v} \in V $$
-2. El producto de un escalar $\alpha \in K$ por la transformación $T$ es una transformación lineal de $V$ en $W$ que se denota con $\alpha T$ y se define como: $$ (\alpha T)(\vec{v}) = \alpha T(\vec{v}) \quad ; \quad \forall \, \vec{v} \in V $$
+1. La suma $T+H$ de $T$ y $H$ es una transformación lineal de $V$ en $W$ definida por: 
+
+$$ 
+(T+H)(\vec{v}) = T(\vec{v}) + H(\vec{v}) \quad ; \quad \forall \, \vec{v} \in V 
+$$
+2. El producto de un escalar $\alpha \in K$ por la transformación $T$ es una transformación lineal de $V$ en $W$ que se denota con $\alpha T$ y se define como: 
+$$
+(\alpha T)(\vec{v}) = \alpha T(\vec{v}) \quad ; \quad \forall \, \vec{v} \in V
+$$
 ### Composición
 
-3. Sean $T: U \rightarrow V$ y $H: V \rightarrow W$ dos transformaciones lineales. La operación $H \circ T$ es una transformación lineal de $U$ en $W$ definida por: $$ (H \circ T)(\vec{u}) = H[T(\vec{u})] \quad ; \quad \forall \, \vec{u} \in U $$La operación composición puede representarse gráficamente de la siguiente forma:
+3. Sean $T: U \rightarrow V$ y $H: V \rightarrow W$ dos transformaciones lineales. La operación $H \circ T$ es una transformación lineal de $U$ en $W$ definida por: 
+
+$$
+(H \circ T)(\vec{u}) = H[T(\vec{u})] \quad ; \quad \forall \, \vec{u} \in U 
+$$
+
+La operación composición puede representarse gráficamente de la siguiente forma:
 	![[Screenshot 2025-07-01 at 11.07.38 a.m..png]]
 
 
@@ -19,11 +32,25 @@ Sean $V$ y $W$ dos espacios vectoriales sobre un campo $K$ y sean las transforma
  - $S: V \rightarrow W$
 
 Se tiene que:
-- $$T+R = R+T$$
-- $$(T+R)+S = T+(R+S)$$
-- $$\alpha(\beta T) = (\alpha\beta)T \quad ; \quad \forall \, \alpha, \beta \in K$$
-- $$(\alpha + \beta)T = \alpha T + \beta T \quad ; \quad \forall \, \alpha, \beta \in K$$
-- $$\alpha(T + R) = \alpha T + \alpha R \quad ; \quad \forall \, \alpha \in K$$
+$$
+T+R = R+T
+$$
+
+$$
+(T+R)+S = T+(R+S)
+$$
+
+$$
+\alpha(\beta T) = (\alpha\beta)T \quad ; \quad \forall \, \alpha, \beta \in K
+$$
+
+ $$
+ (\alpha + \beta)T = \alpha T + \beta T \quad ; \quad \forall \, \alpha, \beta \in K
+ $$
+
+ $$
+ \alpha(T + R) = \alpha T + \alpha R \quad ; \quad \forall \, \alpha \in K
+ $$
 
 ## Propiedades de la composición de transformaciones lineales
 
@@ -36,21 +63,43 @@ Sean $U, V, W$ y $X$ espacios vectoriales sobre un campo $K$ y sean las transfor
 - $F: V \rightarrow W$
 
 Se tiene que: 
-- $$H \circ (S \circ T) = (H \circ S) \circ T$$
-- $$\alpha (S \circ T) = (\alpha S) \circ T = S \circ (\alpha T) \quad ; \quad \forall \, \alpha \in K$$
-- $$S \circ (T+R) = (S \circ T) + (S \circ R)$$
-- $$(S+F) \circ T = (S \circ T) + (F \circ T)$$
+
+$$
+H \circ (S \circ T) = (H \circ S) \circ T
+$$
+
+
+$$
+\alpha (S \circ T) = (\alpha S) \circ T = S \circ (\alpha T) \quad ; \quad \forall \, \alpha \in K
+$$
+
+$$
+S \circ (T+R) = (S \circ T) + (S \circ R)
+$$
+
+$$
+(S+F) \circ T = (S \circ T) + (F \circ T)
+$$
 
 
 ### Teorema
 
 Sean $V$ y $W$ dos espacios vectoriales definidos sobre un campo $K$, y sean $A$ y $B$ bases de $V$ y $W$, respectivamente. Si $T$ y $H$ son dos transformaciones lineales cualesquiera de $V$ en $W$, entonces: 
--  $$M_B^A (T+H) = M_B^A (T) + M_B^A (H)$$
-- $$M_B^A (\alpha T) = \alpha M_B^A (T) \quad ; \quad \forall \, \alpha \in K$$ 
+
+$$
+M_B^A (T+H) = M_B^A (T) + M_B^A (H)
+$$
+
+$$
+M_B^A (\alpha T) = \alpha M_B^A (T) \quad ; \quad \forall \, \alpha \in K
+$$ 
  
  Sean $U, V$ y $W$ tres espacios vectoriales definidos sobre un campo $K$, y sean $A, B$ y $C$ bases de $U, V$ y $W$, respectivamente.
  Si $T: U \rightarrow V$ y $H: V \rightarrow W$ son dos transformaciones lineales, entonces: 
- - $$M_C^A (H \circ T) = M_C^B (H) M_B^A (T)$$
+ 
+ $$
+ M_C^A (H \circ T) = M_C^B (H) M_B^A (T)
+ $$
 
 
 

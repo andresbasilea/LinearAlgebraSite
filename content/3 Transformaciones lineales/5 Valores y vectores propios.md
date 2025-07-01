@@ -3,9 +3,15 @@
 ### Valores y vectores propios
 
 A las transformaciones lineales que se aplican de un espacio vectorial $V$ al mismo espacio $V$, se les conoce como operadores lineales.
-$$T: V \rightarrow V$$
+
+$$
+T: V \rightarrow V
+$$
 Para este tipo de transformaciones pueden existir vectores diferentes de cero que tienen la siguiente característica:
-$$T(\vec{v}) = \lambda \vec{v}$$
+
+$$
+T(\vec{v}) = \lambda \vec{v}
+$$
 donde $\vec{v} \in V$ y $\lambda$ es un escalar perteneciente al campo de definición del espacio $V$.
 
 El concepto anterior se puede definir formalmente de la siguiente manera:
@@ -13,7 +19,10 @@ El concepto anterior se puede definir formalmente de la siguiente manera:
 ### Definición formal
 
 Sea $V$ un espacio vectorial de dimensión finita definido sobre un campo $K$ y sea $T: V \rightarrow V$ un operador lineal para el cual:
-$$T(\vec{v}) = \lambda \vec{v} \quad \text{con} \quad \vec{v} \neq \vec{0}$$
+
+$$
+T(\vec{v}) = \lambda \vec{v} \quad \text{con} \quad \vec{v} \neq \vec{0}
+$$
 donde $\lambda$ es un escalar perteneciente a $K$. Al escalar $\lambda$ se le llama valor característico de $T$ y al vector $\vec{v}$, diferente de cero, se le conoce como vector característico de $T$ correspondiente al valor $\lambda$.
 
 El vector característico tiene que ser diferente de cero, pero el valor característico $\lambda$ sí puede tomar el valor de cero.

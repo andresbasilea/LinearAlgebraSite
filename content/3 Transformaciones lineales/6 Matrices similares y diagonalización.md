@@ -3,7 +3,9 @@
 ### Matrices similares
 Se tiene que dos matrices $A$ y $B$ de orden $n \times n$ son similares, si existe una matriz no singular $C$, tal que:
 
-$$ B = C^{-1} AC$$
+$$ 
+B = C^{-1} AC
+$$
 
 ### Teorema
 Dos matrices representan al mismo operador lineal, si y solo si, son similares.
