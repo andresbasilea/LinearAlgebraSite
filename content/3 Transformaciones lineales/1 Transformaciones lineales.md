@@ -68,16 +68,6 @@ Si $T: V \rightarrow W$ es una transformación lineal, entonces: \
     </iframe>
 </div>
 
-### Matriz asociada a una transformación lineal
-
-
-$$
-\begin{align*} 
-A \vec{x} = \vec{b}
-\end{align*}
-$$
-
-
 ### Aplicando transformaciones lineales a otros espacios vectoriales
 
 ¡La derivada y la integral también son ejemplos de transformaciones lineales! 
@@ -171,7 +161,7 @@ $$
 
 ### Transformaciones no lineales
 
->[!danger] ¿Alguna vez te preguntaste?
+>[!interesante] ¿Alguna vez te preguntaste?
 >¿Por qué el álgebra lineal se limita al estudio de las transformaciones lineales?
 >¿Cómo se ve una transformación no lineal?
 

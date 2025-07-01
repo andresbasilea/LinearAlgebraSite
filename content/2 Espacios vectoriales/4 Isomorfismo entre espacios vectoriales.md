@@ -17,3 +17,22 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
 - Si un espacio vectorial $V$ es isomorfo a otro espacio $W$, entonces $W$ es isomorfo a $V$. 
 - Si un espacio vectorial $U$ es isomorfo a un espacio $V$ y $V$ es a su vez isomorfo a un espacio $W$, entonces $U$ es isomorfo a $W$. 
 - Dos espacios vectoriales de igual dimensión son isomorfos. 
+
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="andresbasilea/LinearAlgebraSite"
+        data-repo-id="R_kgDOO-oDkA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOO-oDkM4CsOaa"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="noborder_light"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+</script>

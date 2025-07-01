@@ -59,3 +59,23 @@ $$
 (\bar{v})_B = (\alpha_1, \alpha_2, \ldots, \alpha_n)^T
 $$
 se le llama vector de coordenadas de $\bar{v}$ en la base $B$.
+
+
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="andresbasilea/LinearAlgebraSite"
+        data-repo-id="R_kgDOO-oDkA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOO-oDkM4CsOaa"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="noborder_light"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+</script>
