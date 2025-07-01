@@ -94,7 +94,7 @@ Si $T: V \rightarrow W$ es una transformación lineal, entonces: \
 <br>
 
 >[!custom] Y... ¿qué pasa con el cubo unitario? 
->Si te diste cuenta, antes de realizar la transformación, teníamos un cubo unitario con centro en el origen. Unitario significa que su volumen es igual a 1, ya que cada uno de sus lados mide exactamente una unidad. Sin embargo, después de realizar la transformación, vemos que el cubo unitario crece de tamaño y rota (al igual que todos los vectores del espacio vectorial). **¿Cómo calcularías rápidamente el volumen de este nuevo cubo?** Haz click abajo para conocer la respuesta: 
+>Si te diste cuenta, antes de realizar la transformación anterior, teníamos un cubo unitario con centro en el origen. Unitario significa que su volumen es igual a 1, ya que cada uno de sus lados mide exactamente una unidad. Sin embargo, después de realizar la transformación, vemos que el cubo unitario crece de tamaño y rota (al igual que todos los vectores del espacio vectorial). **¿Cómo calcularías rápidamente el volumen de este nuevo cubo?** Haz click abajo para conocer la respuesta: 
 >>[!Danger]- La respuesta es:
 >>>[!Interesante] ¡Podemos utilizar el [[1,1 Determinantes|determinante]]! 
 >>>Que, en este caso, daría un valor de volumen de 27

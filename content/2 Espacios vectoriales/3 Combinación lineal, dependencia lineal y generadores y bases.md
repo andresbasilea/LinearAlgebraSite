@@ -44,7 +44,9 @@ Se define como base de un espacio vectorial $V$, a cualquier subconjunto $B$ de 
 ## Dimensión de un espacio vectorial
 
 La dimensión de un espacio vectorial $V$, se define como la cantidad de elementos de cualquiera de sus bases, y se denota como: 
-$$Dim V$$
+$$
+Dim V
+$$
 Si $V={\vec{0}}$ , entonces $Dim V=0$
 
 
