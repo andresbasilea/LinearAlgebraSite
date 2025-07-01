@@ -36,7 +36,6 @@ Sea $(A, \ast)$ un grupo
 	- $y \ast a = b$ 
 - tiene solución única, donde $x, y \in A$.
 
-
 ### Grupo abeliano
 Un sistema $(A,*)$ tiene estructura de grupo abeliano si se cumplen los siguientes axiomas: 
 1. Cerradura
@@ -45,6 +44,12 @@ Un sistema $(A,*)$ tiene estructura de grupo abeliano si se cumplen los siguient
 4. Elemento inverso
 5. Conmutatividad
 
+>[!interesante] Niels Henrik Abel
+>![[Pasted image 20250630183858.png | right]]
+>
+>Un grupo abeliano, como lo estudiamos en clase, es isomorfo al grupo (2,2) representado por el siguiente grafo.
+![[Pasted image 20250630183553.png]]
+>
 
 
 

@@ -1,4 +1,11 @@
 
+>[!custom] ¿Quién fue Galois?
+>adas
+
+>[!interesante] ¿Quién fue Galois?
+>adas
+
+
 
 <script src="https://giscus.app/client.js"
         data-repo="andresbasilea/LinearAlgebraSite"

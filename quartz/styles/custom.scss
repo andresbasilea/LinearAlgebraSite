@@ -3,7 +3,29 @@
 // put your custom CSS here!
 
 
+
 body {
     background-color: #ffffff; /* Example: a light gray background */
     /* You can choose any hex color code */
 }
+
+.callout {
+  &[data-callout="custom"] {
+    --color: #334a51;
+    --border: #28cdff;
+    --bg: #9ed6e753;
+    --callout-icon: url("data:image/svg+xml; utf8, %3Csvg height='64px' width='64px' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-81.93 -81.93 675.90 675.90' xml:space='preserve' fill='%23514d4d' stroke='%23514d4d' transform='rotate(0)'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' stroke='%23CCCCCC' stroke-width='3.07224'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath style='fill:%23999999;' d='M456.68,55.32v398.992l-350.528-48.464L57.688,55.32H456.68 M472.68,39.32H39.32L92,420 l380.712,52.64V39.32H472.68z'%3E%3C/path%3E%3Cg%3E%3Ccircle style='fill:%23ff0000;' cx='39.32' cy='39.32' r='39.32'%3E%3C/circle%3E%3Ccircle style='fill:%23ff0000;' cx='472.72' cy='39.32' r='39.32'%3E%3C/circle%3E%3C/g%3E%3Ccircle cx='91.968' cy='420' r='39.32'%3E%3C/circle%3E%3Ccircle style='fill:%23ff0000;' cx='472.72' cy='472.72' r='39.32'%3E%3C/circle%3E%3C/g%3E%3C/svg%3E"); //SVG icon code
+  }
+}
+
+.callout {
+  &[data-callout="interesante"] {
+    --color: #334a51;
+    --border: #ff4946df;
+    --bg: #ff5f5c2c;
+    --callout-icon: url("data:image/svg+xml; utf8, %3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 512 512' xml:space='preserve' fill='%23000000'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Ccircle cx='138.936' cy='138.936' r='138.936'%3E%3C/circle%3E%3Crect x='269.024' y='269.024' style='fill:%23E21B1B;' width='242.976' height='242.976'%3E%3C/rect%3E%3C/g%3E%3C/svg%3E"); //SVG icon code
+  }
+}
+
+
+
