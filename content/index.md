@@ -45,13 +45,27 @@ comments: "false"
 - [[5 Matriz de transición|Matriz de transición]]
 
 ### Transformaciones lineales
-[[1 Transformaciones lineales]]
-
+[[1 Transformaciones lineales|Transformaciones lineales]]
+- [[2 Matriz asociada a una transformación lineal|Matriz asociada a una transformación lineal]]
+- [[3 Álgebra de transformaciones lineales|Álgebra de transformaciones lineales]]
+- [[4 Efectos geométricos de las transformaciones lineales|Efectos geométricos de las transformaciones lineales]]
+- [[5 Valores y vectores propios|Valores y vectores propios]]
+- [[6 Matrices similares y diagonalización|Matrices similares y diagonalización]]
 ### Espacios con producto interno
-[[1 Espacios con producto interno]]
+[[1 Espacios con producto interno|Espacios con producto interno]]
+- [[2 Norma de un vector y vectores unitarios|Norma de un vector y vectores unitarios]]
+- [[3 Conjuntos ortogonales y ortonormales|Conjuntos ortogonales y ortonormales]]
+- [[4 Complemento ortogonal y proyección de un vector sobre un subespacio|Complemento ortogonal y proyección de un vector sobre un subespacio]]
+- [[5 Mínimos cuadrados|Mínimos cuadrados]]
 
 ### Operadores lineales en espacios con producto interno
-[[1 Operadores lineales en espacios con producto interno]]
+[[1 Operadores lineales en espacios con producto interno|Operadores lineales en espacios con producto interno]]
+- [[2 Adjunto de un operador|Adjunto de un operador]]
+- [[3 Operador normal|Operador normal]]
+- [[4 Operadores hermitianos, antihermitianos, simétricos y antisimétricos|Operadores hermitianos, antihermitianos, simétricos y antisimétricos]]
+- [[5 Operadores ortogonales y unitarios|Operadores ortogonales y unitarios]]
+- [[6 Teorema espectral|Teorema espectral]]
+- [[7 Formas cuádricas|Formas cuádricas]]
 
 ### Sobre la clase
 [[Sobre la clase]]
