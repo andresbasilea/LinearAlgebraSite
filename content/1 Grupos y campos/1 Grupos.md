@@ -46,10 +46,7 @@ Un sistema $(A,*)$ tiene estructura de grupo abeliano si se cumplen los siguient
 
 >[!interesante] Niels Henrik Abel
 >![[Pasted image 20250630183858.png | right]]
->
->Un grupo abeliano, como lo estudiamos en clase, es isomorfo al grupo (2,2) representado por el siguiente grafo.
-![[Pasted image 20250630183553.png]]
->
+
 
 
 
