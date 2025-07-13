@@ -78,7 +78,7 @@ se le llama vector de coordenadas de $\bar{v}$ en la base $B$.
 </div>
 
 
-## Veamos lo mismom, pero en tres dimensiones
+## Veamos lo mismo, pero en tres dimensiones
 <div style="position:relative;padding-bottom:56.25%;">
     <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
     <iframe
