@@ -78,6 +78,35 @@ se le llama vector de coordenadas de $\bar{v}$ en la base $B$.
 </div>
 
 
+## Veamos lo mismom, pero en tres dimensiones
+<div style="position:relative;padding-bottom:56.25%;">
+    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="_span/span3d.html">
+    </iframe>
+</div>
+
+
+## Y ahora, ¿qué espacio generan tres vectores linealmente independientes? 
+<div style="position:relative;padding-bottom:56.25%;">
+    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="_span/span3d2.html">
+    </iframe>
+</div>
+
 <script src="https://giscus.app/client.js"
         data-repo="andresbasilea/LinearAlgebraSite"
         data-repo-id="R_kgDOO-oDkA"
