@@ -52,7 +52,7 @@ jobs:
           find public/ -type f -name "rotacion" -exec mv {} {}.html \;
           find public/ -type f -name "rotacion3D" -exec mv {} {}.html \;
           find public/ -type f -name "rotacion3Dbasica" -exec mv {} {}.html \;
-          find public/ -type f -name "span2D" -exec mv {} {}.html \;
+          find public/ -type f -name "span2d" -exec mv {} {}.html \;
           find public/ -type f -name "span3d" -exec mv {} {}.html \;
           find public/ -type f -name "span3d2" -exec mv {} {}.html \;
 
