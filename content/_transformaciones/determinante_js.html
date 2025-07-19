@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quartz P5.js Sketch</title>
+    <!-- Tailwind CSS CDN for basic styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- p5.js library CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <style>
+        /* Custom styles for the canvas and overall layout */
+        body {
+            font-family: 'Inter', sans-serif; /* Using Inter font */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0; /* Light background */
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            overflow-y: auto; /* Allow vertical scrolling if content exceeds viewport, but aim to prevent it */
+        }
+        canvas {
+            display: block; /* Remove extra space below canvas */
+            border-radius: 10px; /* Rounded corners for the canvas */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .slider-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow sliders to wrap on smaller screens */
+            justify-content: center;
+            gap: 20px; /* Space between slider groups */
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            max-width: 90%; /* Limit slider container width */
+        }
+        .slider-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+        .slider-group label {
+            font-size: 0.9rem;
+            color: #333;
+            margin-bottom: 2px;
+        }
+        /* Style for p5.js sliders */
+        input[type=range] {
+            -webkit-appearance: none; /* Override default look */
+            width: 120px; /* Adjust width as needed */
+            height: 8px; /* Thinner track */
+            background: #d3d3d3; /* Light gray track */
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            border-radius: 4px; /* Rounded track */
+        }
+
+        input[type=range]:hover {
+            opacity: 1;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px; /* Larger thumb */
+            height: 18px; /* Larger thumb */
+            border-radius: 50%; /* Round thumb */
+            background: #4CAF50; /* Green thumb */
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type=range]::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #4CAF50;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-2xl font-bold text-gray-800 mb-6 mt-4">Visualización interactiva del valor del determinante de una matrix 2x2</h1>
+
+    <!-- Container for the p5.js canvas -->
+    <div id="p5-canvas-container" class="rounded-lg shadow-lg overflow-hidden">
+        <!-- The p5.js canvas will be appended here by p5.js -->
+    </div>
+
+    <!-- The p5.js sketch code -->
+    <script>
+        // Global variables for the sketch
+        var a = 1;
+        var b = 0.5;
+        var c = 0;
+        var d = 0.7;
+        var state = 0; // New variable from user's code
+        var rojox, rojoy, verdex, verdey; // Sliders (par removed as per new code)
+
+        // p5.js setup function - runs once when the sketch starts
+        function setup() {
+            // Calculate initial canvas size based on window dimensions
+            // This ensures the canvas fits within the viewport
+            let canvasSize = min(windowWidth, windowHeight); // Take 90% of width or 60% of height, whichever is smaller, for a square
+            let canvas = createCanvas(canvasSize, canvasSize);
+            canvas.parent('p5-canvas-container'); // Attach canvas to the div
+
+            // Create a container for all sliders
+            let sliderContainer = createDiv('');
+            sliderContainer.class('slider-container');
+            // Place the slider container as a direct child of the body, outside the canvas container
+            sliderContainer.parent(select('body'));
+
+            // Helper function to create a slider group (label + slider)
+            function createSliderGroup(label, min, max, defaultValue, step, parentDiv) {
+                let group = createDiv('');
+                group.class('slider-group');
+                group.parent(parentDiv);
+
+                let labelEl = createP(label);
+                labelEl.parent(group);
+                labelEl.class('text-sm font-medium text-gray-700'); // Tailwind classes for label
+
+                let slider = createSlider(min, max, defaultValue, step);
+                slider.parent(group);
+                slider.class('w-32'); // Tailwind class for width
+
+                return slider;
+            }
+
+            // Create sliders for 'a' and 'b' (rojox, rojoy) with updated default values
+            rojox = createSliderGroup('Vector Rojo (a,b) - a:', -2, 2, 1, 0.01, sliderContainer);
+            rojoy = createSliderGroup('Vector Rojo (a,b) - b:', -2, 2, 1, 0.01, sliderContainer);
+
+            // Create sliders for 'c' and 'd' (verdex, verdey) with updated default values
+            verdex = createSliderGroup('Vector Verde (c,d) - c:', -2, 2, 0.7, 0.01, sliderContainer);
+            verdey = createSliderGroup('Vector Verde (c,d) - d:', -2, 2, 0.5, 0.01, sliderContainer);
+        }
+
+        // p5.js windowResized function - automatically called when window is resized
+        function windowResized() {
+            // Recalculate canvas size to adapt to new window dimensions
+            let newCanvasSize = min(windowWidth * 0.9, windowHeight * 0.6);
+            resizeCanvas(newCanvasSize, newCanvasSize);
+        }
+
+        // p5.js draw function - runs continuously
+        function draw() {
+            // Translate the origin to the center of the canvas
+            translate(width / 2, height / 2);
+            // Scale the drawing to fit within the canvas, making coordinates -2 to 2 visible
+            scale(width / 4);
+
+            // Get current values from sliders
+            a = rojox.value();
+            b = rojoy.value();
+            c = verdex.value();
+            d = verdey.value();
+
+            background(0); // Black background
+            stroke(250); // White stroke
+            fill(250); // White fill
+            strokeWeight(4 / width); // Adjust stroke weight based on canvas size for axes
+
+            // Draw coordinate axes
+            line(0, 2, 0, -2); // Y-axis
+            line(-2, 0, 2, 0); // X-axis
+
+            strokeWeight(1.6 / width); // Adjust stroke weight for grid lines
+
+            // Display axis labels
+            textSize(48 / width); // Adjust text size based on canvas size
+            textAlign(CENTER, CENTER); // Center text alignment
+            text('0', 0.05, 0.05); // Origin
+            text('1', 1, 0.05);
+            text('-1', -1, 0.05);
+            text('2', 2, 0.05);
+            text('-2', -2, 0.05);
+
+            text('1', 0.05, -1);
+            text('2', 0.05, -2);
+            text('-1', 0.05, 1);
+            text('-2', 0.05, 2);
+
+            // Draw grid lines
+            for (var i = -15; i <= 15; i++) {
+                stroke(250); // White for grid lines
+                fill(250);
+                // Extend the grid lines to cover a wider range (from -3 to 3)
+                line(-3, i * 0.2, 3, i * 0.2); // Horizontal lines
+                line(i * 0.2, -3, i * 0.2, 3); // Vertical lines
+            }
+
+            // Draw the parallelogram (quad)
+            fill(0, 100, 100); // Teal/Cyan fill
+            noStroke(); // No stroke for the quad for a cleaner look
+            quad(0, 0, a, -b, a + c, -(b + d), c, -d); // Coordinates adjusted for translate/scale
+
+            // Draw the main vectors with thicker lines and points
+            // Vector (a,b) - Labeled "Rojo" in the user's new code
+            stroke(250, 0, 0); // Bright RED
+            strokeWeight(16 / width); // Thicker point
+            point(a, -b); // Coordinates adjusted for translate/scale
+            strokeWeight(4 / width); // Thinner line
+            line(0, 0, a, -b); // Coordinates adjusted for translate/scale
+
+            // Vector (c,d) - Labeled "Verde" in the user's new code
+            stroke(0, 250, 0); // Bright GREEN
+            strokeWeight(16 / width); // Thicker point
+            point(c, -d); // Coordinates adjusted for translate/scale
+            strokeWeight(4 / width); // Thinner line
+            line(0, 0, c, -d); // Coordinates adjusted for translate/scale
+
+            // Draw lines connecting vectors to form the parallelogram outline
+            stroke(250); // White
+            strokeWeight(3.2 / width);
+            line(a, -b, a + c, -(b + d)); // Coordinates adjusted for translate/scale
+            line(c, -d, a + c, -(b + d)); // Coordinates adjusted for translate/scale
+
+            // Display determinant value on canvas
+            fill(250); // White fill for text
+            strokeWeight(2 / width); // Thinner stroke for text
+            textSize(48 / width); // Adjust text size
+            textAlign(LEFT, TOP); // Align text to top-left
+            var det = round(-a * d + b * c, 3);
+            text('Determinante:', (a + c) / 2, -(b + d) / 2);
+            text(det, (a + c) / 2 + (320 / width), -(b + d) / 2); // Offset adjusted for scale
+        }
+
+        // Functions from user's code (not currently triggered by UI)
+        function moverrojo() {
+            state = 1;
+        }
+
+        function moververde() {
+            c = 1; // Note: This will override the slider value for 'c' if called.
+        }
+    </script>
+</body>
+</html>
