@@ -89,7 +89,7 @@
     </style>
 </head>
 <body>
-    <h1 class="text-2xl font-bold text-gray-800 mb-6 mt-4">Visualización interactiva del valor del determinante de una matrix 2x2</h1>
+    <h1 class="text-2xl font-bold text-gray-800 mb-6 mt-4">Visualización interactiva del valor del determinante</h1>
 
     <!-- Container for the p5.js canvas -->
     <div id="p5-canvas-container" class="rounded-lg shadow-lg overflow-hidden">
@@ -166,9 +166,9 @@
             c = verdex.value();
             d = verdey.value();
 
-            background(0); // Black background
-            stroke(250); // White stroke
-            fill(250); // White fill
+            background(250); // Black background
+            stroke(0); // White stroke
+            fill(0); // White fill
             strokeWeight(4 / width); // Adjust stroke weight based on canvas size for axes
 
             // Draw coordinate axes
@@ -193,8 +193,8 @@
 
             // Draw grid lines
             for (var i = -15; i <= 15; i++) {
-                stroke(250); // White for grid lines
-                fill(250);
+                stroke(0); // White for grid lines
+                fill(0);
                 // Extend the grid lines to cover a wider range (from -3 to 3)
                 line(-3, i * 0.2, 3, i * 0.2); // Horizontal lines
                 line(i * 0.2, -3, i * 0.2, 3); // Vertical lines
@@ -221,13 +221,13 @@
             line(0, 0, c, -d); // Coordinates adjusted for translate/scale
 
             // Draw lines connecting vectors to form the parallelogram outline
-            stroke(250); // White
+            stroke(0); // White
             strokeWeight(3.2 / width);
             line(a, -b, a + c, -(b + d)); // Coordinates adjusted for translate/scale
             line(c, -d, a + c, -(b + d)); // Coordinates adjusted for translate/scale
 
             // Display determinant value on canvas
-            fill(250); // White fill for text
+            fill(0); // White fill for text
             strokeWeight(2 / width); // Thinner stroke for text
             textSize(48 / width); // Adjust text size
             textAlign(LEFT, TOP); // Align text to top-left

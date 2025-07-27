@@ -56,6 +56,8 @@ jobs:
           find public/ -type f -name "span2d" -exec mv {} {}.html \;
           find public/ -type f -name "span3d" -exec mv {} {}.html \;
           find public/ -type f -name "span3d2" -exec mv {} {}.html \;
+          find public/ -type f -name "determinante_js" -exec mv {} {}.html \;
+          find public/ -type f -name "transformacion_js" -exec mv {} {}.html \;
 
 
 

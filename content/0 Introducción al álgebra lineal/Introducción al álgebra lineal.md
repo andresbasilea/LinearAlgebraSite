@@ -1,4 +1,8 @@
 
+
+
+
+
 >[!custom] ¿Quién fue Galois?
 >adas
 

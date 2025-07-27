@@ -50,6 +50,45 @@ Un sistema $(A,*)$ tiene estructura de grupo abeliano si se cumplen los siguient
 
 
 
+>[!interesante] Evariste Galois
+>![[Pasted image 20250719194424.png]]
+>
+
+
+Imagina un genio incomprendido, un joven rebelde cuya pasión por las matemáticas era tan intensa como su espíritu revolucionario. Esa fue la vida de **Évariste Galois**, un nombre que quizás no conozcas, pero cuya contribución a las matemáticas es tan fundamental que sin él, nuestra comprensión de los grupos, y por ende, de gran parte del álgebra moderna, sería drásticamente diferente.
+Galois nació en Francia en 1811, en una época de gran agitación política. Desde muy joven, mostró una inteligencia deslumbrante, pero también una personalidad que chocaba con la rigidez del sistema educativo de su tiempo. Aunque intentó ingresar a la prestigiosa École Polytechnique varias veces, fue rechazado, en parte, se dice, por su falta de paciencia con los métodos tradicionales y su impaciencia por avanzar en sus propias ideas revolucionarias.
+> Su mente estaba obsesionada con un problema que había desconcertado a los matemáticos durante siglos: ¿existía una fórmula general para resolver ecuaciones polinómicas de quinto grado (y superiores) utilizando solo operaciones básicas y raíces? Matemáticos como Abel ya habían demostrado que no, pero Galois fue mucho más allá. Se dio cuenta de que la clave para entender la solubilidad de estas ecuaciones no radicaba en las ecuaciones mismas, sino en las **simetrías** de sus raíces.
+> Y es aquí donde entra en juego el concepto de **grupo**. Galois fue el primero en vislumbrar la profunda conexión entre las soluciones de una ecuación y una estructura abstracta que hoy conocemos como **grupo de Galois**. Este grupo, formado por las permutaciones de las raíces que preservan ciertas relaciones, le permitía determinar si una ecuación era soluble por radicales o no. Fue una idea tan radical, tan adelantada a su tiempo, que sus trabajos iniciales fueron rechazados o ignorados por los matemáticos más prominentes de la época.
+La vida de Galois fue tan breve como intensa. Involucrado en la política republicana y constantemente en problemas con las autoridades, su destino se selló en un trágico duelo, supuestamente por una cuestión de honor, aunque las circunstancias exactas siguen siendo un misterio. La noche anterior a su muerte, a la temprana edad de 20 años, Galois pasó sus últimas horas garabateando febrilmente sus ideas matemáticas más importantes, en una carta dirigida a un amigo. En esa carta, instó a su amigo a pedir a los matemáticos que, por favor, juzgaran la importancia de su trabajo.
+
+Y así lo hicieron, aunque tardó un tiempo. Décadas después de su muerte, sus escritos fueron finalmente comprendidos y reconocidos por su inmensa originalidad y profundidad. Lo que Galois había descubierto no era solo una solución a un problema específico, sino un marco conceptual completamente nuevo que revolucionaría las matemáticas.
+
+Su trabajo sentó las bases de la **Teoría de Grupos**, una rama fundamental del álgebra que estudia las propiedades de las simetrías y las transformaciones. Desde la física de partículas hasta la criptografía, los grupos son una herramienta indispensable para describir la estructura y las interacciones en una amplia variedad de campos.
+
+Hoy, al comenzar nuestra exploración de los grupos, recuerden a Évariste Galois. No solo fue un genio matemático, sino un visionario que, a pesar de una vida corta y llena de adversidades, nos legó una de las ideas más poderosas y elegantes de las matemáticas modernas. Su historia es un testimonio del poder de la creatividad, la perseverancia y la capacidad de ver la belleza en la estructura abstracta.
+
+
+
+
+
+Imagina un genio incomprendido, un joven rebelde cuya pasión por las matemáticas era tan intensa como su espíritu revolucionario. Esa fue la vida de **Évariste Galois**, un nombre que quizás no conozcas, pero cuya contribución a las matemáticas es tan fundamental que sin él, nuestra comprensión de los grupos, y por ende, de gran parte del álgebra moderna, sería drásticamente diferente.
+
+Galois nació en Francia en 1811, en una época de gran agitación política. Desde muy joven, mostró una inteligencia deslumbrante, pero también una personalidad que chocaba con la rigidez del sistema educativo de su tiempo. Aunque intentó ingresar a la prestigiosa École Polytechnique varias veces, fue rechazado, en parte, se dice, por su falta de paciencia con los métodos tradicionales y su impaciencia por avanzar en sus propias ideas revolucionarias.
+
+Su mente estaba obsesionada con un problema que había desconcertado a los matemáticos durante siglos: ¿existía una fórmula general para resolver ecuaciones polinómicas de quinto grado (y superiores) utilizando solo operaciones básicas y raíces? Matemáticos como Abel ya habían demostrado que no, pero Galois fue mucho más allá. Se dio cuenta de que la clave para entender la solubilidad de estas ecuaciones no radicaba en las ecuaciones mismas, sino en las **simetrías** de sus raíces.
+
+Y es aquí donde entra en juego el concepto de **grupo**. Galois fue el primero en vislumbrar la profunda conexión entre las soluciones de una ecuación y una estructura abstracta que hoy conocemos como **grupo de Galois**. Este grupo, formado por las permutaciones de las raíces que preservan ciertas relaciones, le permitía determinar si una ecuación era soluble por radicales o no. Fue una idea tan radical, tan adelantada a su tiempo, que sus trabajos iniciales fueron rechazados o ignorados por los matemáticos más prominentes de la época.
+
+La vida de Galois fue tan breve como intensa. Involucrado en la política republicana y constantemente en problemas con las autoridades, su destino se selló en un trágico duelo, supuestamente por una cuestión de honor, aunque las circunstancias exactas siguen siendo un misterio. La noche anterior a su muerte, a la temprana edad de 20 años, Galois pasó sus últimas horas garabateando febrilmente sus ideas matemáticas más importantes, en una carta dirigida a un amigo. En esa carta, instó a su amigo a pedir a los matemáticos que, por favor, juzgaran la importancia de su trabajo.
+
+Y así lo hicieron, aunque tardó un tiempo. Décadas después de su muerte, sus escritos fueron finalmente comprendidos y reconocidos por su inmensa originalidad y profundidad. Lo que Galois había descubierto no era solo una solución a un problema específico, sino un marco conceptual completamente nuevo que revolucionaría las matemáticas.
+
+Su trabajo sentó las bases de la **Teoría de Grupos**, una rama fundamental del álgebra que estudia las propiedades de las simetrías y las transformaciones. Desde la física de partículas hasta la criptografía, los grupos son una herramienta indispensable para describir la estructura y las interacciones en una amplia variedad de campos.
+
+Hoy, al comenzar nuestra exploración de los grupos, recuerden a Évariste Galois. No solo fue un genio matemático, sino un visionario que, a pesar de una vida corta y llena de adversidades, nos legó una de las ideas más poderosas y elegantes de las matemáticas modernas. Su historia es un testimonio del poder de la creatividad, la perseverancia y la capacidad de ver la belleza en la estructura abstracta.
+
+
+
 <script src="https://giscus.app/client.js"
         data-repo="andresbasilea/LinearAlgebraSite"
         data-repo-id="R_kgDOO-oDkA"
