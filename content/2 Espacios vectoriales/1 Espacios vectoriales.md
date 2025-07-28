@@ -18,7 +18,7 @@ Para que este sistema se considere un espacio vectorial, debe cumplir diez axiom
 En resumen, la belleza de la definición de un espacio vectorial radica en su abstracción. Cualquier conjunto de objetos que cumpla con estos diez axiomas puede ser tratado como un espacio vectorial, lo que permite que las mismas herramientas y conceptos del álgebra lineal se apliquen a campos tan diversos como la geometría, la física, la computación y la ciencia de datos.
 
 
->[!info] introducción de la idea de **Espacio Vectorial**
+>[!info] ¿Quién introdujo la idea de **Espacio Vectorial**?
 > A menudo se atribuye al matemático alemán **Hermann Grassmann** (1809–1877) la introducción de la idea de un **espacio vectorial** en 1844, aunque él nunca usó ese término específicamente. Lamentablemente, su obra resultó difícil de leer, por lo que no recibió en su momento la atención que merecía.
 > 
 > Uno de los matemáticos que estudió su trabajo fue el italiano **Giuseppe Peano** (1858–1932), quien en su libro _Calcolo Geometrico_ (1888) clarificó las ideas de Grassmann y formuló los **axiomas** de lo que hoy entendemos como un espacio vectorial. Esta obra también es destacada por introducir las operaciones con conjuntos, usando símbolos como `∪`, `∩` y `∈` para unión, intersección y pertenencia, respectivamente, una notación que hoy es estándar, aunque inicialmente no fue ampliamente adoptada.

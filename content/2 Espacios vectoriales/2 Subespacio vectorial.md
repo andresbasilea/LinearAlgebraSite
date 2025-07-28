@@ -1,7 +1,27 @@
 
 ### ¿Qué es un subespacio vectorial?
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+Un **subespacio vectorial** es un subconjunto de un espacio vectorial más grande que, por sí mismo, cumple con todas las reglas para ser un espacio vectorial.
+
+En otras palabras, es un "espacio" que vive dentro de otro espacio. La clave es que este subconjunto no solo contiene vectores, sino que también es "cerrado" bajo las operaciones de suma y multiplicación por un escalar.
+
+Para que un subconjunto $W$ de un espacio vectorial $V$ sea considerado un subespacio vectorial, solo necesita cumplir tres condiciones:
+
+1. **El vector cero está en $W$:** El subconjunto $W$ debe contener el vector cero del espacio vectorial $V$. Esto garantiza que no es un conjunto vacío.
+    
+2. **Cerradura bajo la suma:** Si tomas dos vectores cualesquiera de $W$ y los sumas, el vector resultante debe pertenecer también a $W$.$
+    
+3. **Cerradura bajo la multiplicación por un escalar:** Si tomas cualquier vector de $W$ y lo multiplicas por cualquier escalar, el vector resultante debe pertenecer también a $W$.
+
+##### Ejemplo
+
+Imagina el plano 2D (R2) como tu espacio vectorial. Una línea recta que pasa por el origen (0,0) es un subespacio vectorial.
+
+- Contiene al vector cero (0,0).
+    
+- Si sumas dos vectores que están en esa línea, el resultado sigue estando en la misma línea.
+    
+- Si estiras o encoges un vector de esa línea (lo multiplicas por un escalar), sigue estando en la misma línea.
 
 ### Definición formal
 
