@@ -2,15 +2,52 @@
 
 ### ¿A qué nos referimos con espacio vectorial?
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+Un **espacio vectorial** es una de las estructuras fundamentales del álgebra lineal. En términos sencillos, nos referimos a una colección de "objetos" (a los que llamamos **vectores**) que se comportan de una manera predecible y consistente.
+
+Formalmente, un espacio vectorial es un conjunto $V$ de vectores junto con un conjunto de escalares (números) $K$ (un **campo**), sobre los cuales se definen dos operaciones:
+
+1. **Suma de vectores:** Si sumas dos vectores de $V$, el resultado es otro vector que también pertenece a $V$.
+    
+2. **Multiplicación por un escalar:** Si multiplicas un vector de $V$ por un escalar de $K$, el resultado es otro vector que también pertenece a $V$.
+    
+Para que este sistema se considere un espacio vectorial, debe cumplir diez axiomas o reglas específicas que garantizan su coherencia matemática. Estas reglas, que incluyen la asociatividad, la conmutatividad y la existencia de elementos neutros e inversos, aseguran que las operaciones se comporten de manera lógica.
+
+![[Screenshot 2025-07-27 at 7.57.01 p.m..png]]
+
+
+En resumen, la belleza de la definición de un espacio vectorial radica en su abstracción. Cualquier conjunto de objetos que cumpla con estos diez axiomas puede ser tratado como un espacio vectorial, lo que permite que las mismas herramientas y conceptos del álgebra lineal se apliquen a campos tan diversos como la geometría, la física, la computación y la ciencia de datos.
+
+
+>[!info] introducción de la idea de **Espacio Vectorial**
+> A menudo se atribuye al matemático alemán **Hermann Grassmann** (1809–1877) la introducción de la idea de un **espacio vectorial** en 1844, aunque él nunca usó ese término específicamente. Lamentablemente, su obra resultó difícil de leer, por lo que no recibió en su momento la atención que merecía.
+> 
+> Uno de los matemáticos que estudió su trabajo fue el italiano **Giuseppe Peano** (1858–1932), quien en su libro _Calcolo Geometrico_ (1888) clarificó las ideas de Grassmann y formuló los **axiomas** de lo que hoy entendemos como un espacio vectorial. Esta obra también es destacada por introducir las operaciones con conjuntos, usando símbolos como `∪`, `∩` y `∈` para unión, intersección y pertenencia, respectivamente, una notación que hoy es estándar, aunque inicialmente no fue ampliamente adoptada.
+> 
+> A pesar de la claridad del enfoque axiomático de Peano, su influencia fue limitada durante muchos años. Fue hasta 1918, cuando **Hermann Weyl** (1885–1955) retomó y difundió estos conceptos en su libro _Space, Time, Matter_, una introducción a la relatividad general de Einstein, que la definición moderna de espacio vectorial comenzó a ganar aceptación en la comunidad científica.
+
+![[Pasted image 20250727195812.png]]
 
 ### ¿Qué puede ser un vector?
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+En su esencia, un vector es un elemento de un **espacio vectorial**, lo que significa que cumple con ciertas reglas que permiten sumarlo con otros vectores y multiplicarlo por escalares.
+
+Dependiendo del contexto, un vector puede ser:
+
+- **Una flecha en el espacio:** Esta es la definición más intuitiva y la que se usa en física. Un vector de desplazamiento, por ejemplo, te dice "muévete 3 metros al este y 4 metros al norte". En este caso, el vector se representa como (3,4).
+    
+- **Un polinomio:** El conjunto de todos los polinomios de un cierto grado (por ejemplo, los de grado 2) puede formar un espacio vectorial. Un polinomio como 5x2+2x−1 puede ser tratado como un vector (5,2,−1).
+    
+- **Una función:** El conjunto de todas las funciones continuas en un intervalo, por ejemplo, es un espacio vectorial. En este caso, el "vector" es la función misma. Puedes sumar dos funciones o multiplicar una función por un número, y el resultado sigue siendo una función.
+
+>[!interesante] ¿Se te ocurre algo adicional que pueda verse como vector? 
 
 ### ¿Cuál es la relación con [[1 Grupos|Grupos]] y [[2 Campos|Campos]]?
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+Un espacio vectorial se trata de un conjunto de vectores $V$ y un campo de escalares $K$ que cumplen dos operaciones:
+
+1. **Suma de vectores:** El conjunto de vectores $V$ debe formar un **grupo abeliano** bajo la operación de suma.
+    
+2. **Multiplicación por un escalar:** Debe haber una operación que tome un escalar del campo $K$ y un vector de $V$ para producir otro vector de $V$, y esta operación debe cumplir ciertas propiedades de distribución y asociatividad con los elementos del campo.
 
 ### Definición formal
 
