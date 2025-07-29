@@ -10,6 +10,39 @@ $$
 donde los escalares $\alpha_1, \alpha_2, \ldots, \alpha_n \in K$
 
 
+##### Ejemplo de combinación lineal en la vida real
+
+Los ejemplos en los que se presentan las combinaciones lineales son muy variados: planos, rectas, mezcla aditiva de colores, cuerpos sujetos a fuerzas e incluso recetas de cocina.
+
+>[!interesante] Visualización de combinación lineal en mecánica
+>Sea una pelota colgante, como la mostrada en la figura, sostenida por dos cuerdas. El sistema está en reposo y la pelota pesa $W = 7$ N. ¿Cuáles son las magnitudes de las fuerzas $F_1$ y $F_2$?
+
+![[Screenshot 2025-07-27 at 10.14.25 p.m..png|400]]
+
+Como el sistema está en equilibrio estático, la resultante de la suma de fuerzas es el vector nulo; es decir
+$$
+F_1 + F_2 - W = 0
+$$
+$$
+F_1 \begin{bmatrix} -\cos 45^\circ \\ \sin 45^\circ \end{bmatrix} + F_2 \begin{bmatrix} \cos 60^\circ \\ \sin 60^\circ \end{bmatrix} + \begin{bmatrix} 0 \\ -7 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+$$
+que es una combinación lineal de fuerzas. Aplicando las operaciones y la igualdad entre vectores, se obtiene el sistema de ecuaciones lineales
+$$
+\begin{cases}
+-0.71F_1 + 0.50F_2 = 0 \\
+0.71F_1 + 0.87F_2 = 7
+\end{cases}
+$$
+Este es un sistema compatible determinado, cuya solución proporciona las magnitudes solicitadas: $F_1 = 3.60$ N y $F_2 = 5.11$ N.
+
+El ejemplo anterior ilustra perfectamente que toda combinación lineal desemboca en un sistema de ecuaciones lineales. De acuerdo a la teoría estudiada en el curso de Álgebra, un sistema de ecuaciones lineales se clasifica en tres tipos de acuerdo a su solución; al estar ligados, los dos tipos de sistemas se trasladan a las combinaciones lineales para darles una identidad específica en el espacio o subespacio vectorial al que pertenezcan los vectores. La clasificación es la siguiente:
+
+- **Sistema de ecuaciones lineales determinado**: La combinación lineal es única; es decir, cada escalar de la combinación posee un único valor.
+- **Sistema de ecuaciones lineales compatible indeterminado**: Existen múltiples combinaciones lineales; los escalares dependen de parámetros libres.
+- **Sistema de ecuaciones lineales incompatible**: La combinación lineal no existe.
+
+
+
 ## Dependencia Lineal
 
 ### Definición formal
@@ -35,6 +68,12 @@ Sea $V$ un espacio vectorial sobre $K$, y sea $G = \{\bar{v}_1, \bar{v}_2, \ldot
 Se define como base de un espacio vectorial $V$, a cualquier subconjunto $B$ de vectores de $V$, tal que:
 -  Cualquier vector de $V$ puede expresarse como una combinación lineal de los vectores de $B$.
 -  $B$ es linealmente independiente.
+
+
+>[!info] Las coordenadas cilíndricas forman una base de $R^3$
+>La base $Ro, Phi, Z$ permite generar a todo el espacio $R^3$. ¿Alcanzas a visualizar cómo?
+>![[Pasted image 20250727222208.png|500]]
+
 
 ### Algunos teoremas
 - Sea $V$ un espacio vectorial sobre un campo $K$. Si $B = \{\vec{v_1}, \vec{v_2}, ..., \vec{v_n}\}$ es una base de $V$, entonces cualquier conjunto de vectores de $V$ con más de $n$ elementos es linealmente dependiente. 

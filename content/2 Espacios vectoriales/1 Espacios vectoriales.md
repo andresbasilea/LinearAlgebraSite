@@ -25,7 +25,7 @@ En resumen, la belleza de la definición de un espacio vectorial radica en su ab
 > 
 > A pesar de la claridad del enfoque axiomático de Peano, su influencia fue limitada durante muchos años. Fue hasta 1918, cuando **Hermann Weyl** (1885–1955) retomó y difundió estos conceptos en su libro _Space, Time, Matter_, una introducción a la relatividad general de Einstein, que la definición moderna de espacio vectorial comenzó a ganar aceptación en la comunidad científica.
 
-![[Pasted image 20250727195812.png]]
+![[Pasted image 20250727195812.png|600]]
 
 ### ¿Qué puede ser un vector?
 
