@@ -34,6 +34,12 @@ Sea $V$ un espacio vectorial sobre un campop $K$. Si $W$ es un subconjunto no va
 
 
 <br>
+>[!interesante] ¿Y si no pasa / contiene al origen?
+>Un plano en $R^3$ que no pasa por el origen no es un subespacio de $R^3$ porque el plano no contiene al vector cero de $R^3$. De manera similar, una línea en $R^2$ que no pasa por el origen, como en la figura, no es un subespacio de $R^2$.
+>![[Screenshot 2025-07-29 at 10.31.54 a.m..png|center]]
+>La siguiente figura sí es un ejemplo de un subespacio de $R^3$, ya que es un plano que contiene al origen. 
+>![[Screenshot 2025-07-29 at 10.33.48 a.m..png]]
+
 
 ### Ejercicio
 

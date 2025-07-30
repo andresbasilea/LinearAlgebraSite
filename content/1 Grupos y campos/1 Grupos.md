@@ -51,6 +51,125 @@ Un sistema $(A,*)$ tiene estructura de grupo abeliano si se cumplen los siguient
 >![[Pasted image 20250630183858.png]]
 
 
+<br>
+<br>
+
+## Ejercicios
+
+>[!interesante] **Ejercicio 1**
+>Determina si el sistema $(F, *)$ tiene estructura de grupo, donde: 
+>
+>El conjunto dado es $F = \{a+\sqrt{2} \mid a \in \mathbb{R}\}$ y la operación binaria $*$ está definida por $(a+\sqrt{2}) * (b+\sqrt{2}) = (a+b)+\sqrt{2}$.
+
+##### Solución
+Determinemos si la operación binaria $*$ cumple con los cuatro axiomas de grupo.
+
+
+1. **Cerradura**
+	
+	$$
+	\forall a+\sqrt{2}, b+\sqrt{2} \in F
+	$$
+	$$
+	(a+\sqrt{2}) * (b+\sqrt{2}) = (a+b)+\sqrt{2} \in F
+	$$
+	dado que $(a+b) \in \mathbb{R}$.
+	$\newline \therefore$ cumple
+
+
+<br>
+
+2. **Asociatividad**
+	$$
+	\forall a+\sqrt{2}, \, b+\sqrt{2}, \, c+\sqrt{2} \,\in F 
+	$$
+	$$ 
+	[(a+\sqrt{2}) * (b+\sqrt{2})] * (c+\sqrt{2}) = (a+\sqrt{2}) * [(b+\sqrt{2}) * (c+\sqrt{2})] 
+	$$
+	aplicando $*$ dentro de los corchetes, tenemos:
+	$$ 
+	(a+b+\sqrt{2}) * (c+\sqrt{2}) = (a+\sqrt{2}) * (b+c+\sqrt{2}) 
+	$$
+	$$ 
+	(a+b+c)+\sqrt{2} = (a+b+c)+\sqrt{2} 
+	$$
+	$\therefore$ cumple
+
+
+<br>
+
+3. **Existencia del elemento idéntico**
+	$$
+	\forall \;a+\sqrt{2} \in F; \; \exists \; e+\sqrt{2} \in F \mid (a+\sqrt{2})*(e+\sqrt{2}) = (e+\sqrt{2})*(a+\sqrt{2}) = a+\sqrt{2}
+	$$
+	
+	Dado que no se sabe si la operación $*$ es conmutativa, entonces se tienen que obtener los elementos idénticos derecho e izquierdo y si ambos existen y son iguales, entonces se podrá concluir que el elemento idéntico existe.
+	
+	Idéntico derecho:
+	$$ 
+	(a+\sqrt{2}) * (e+\sqrt{2}) = a+\sqrt{2} 
+	$$
+	$$
+	(a+e)+\sqrt{2} = a+\sqrt{2}
+	$$
+	La igualdad se cumple si $e=0$, por lo que el idéntico derecho es:
+	$$ 
+	e+\sqrt{2} = 0+\sqrt{2} \in F \quad \therefore \text{existe} 
+	$$
+	
+	Idéntico izquierdo:
+	$$ 
+	(e+\sqrt{2}) * (a+\sqrt{2}) = a+\sqrt{2} 
+	$$
+	$$ 
+	(e+a)+\sqrt{2} = a+\sqrt{2} \implies e=0 
+	$$
+	de donde, el idéntico izquierdo es:
+	$$
+	 e+\sqrt{2} = 0+\sqrt{2} \in F \quad \therefore \text{existe} 
+	 $$
+	
+	Dado que ambos elementos idénticos existen y son iguales, entonces podemos concluir que el elemento idéntico existe en el conjunto $F$ y es igual a $0+\sqrt{2}$.
+
+
+<br>
+
+
+4. **Existencia de elementos inversos**
+
+	De igual forma al caso del elemento idéntico, para el caso de los elementos inversos, se tienen también inversos izquierdos y derechos, si ambos existen y son iguales, entonces podemos concluir que los elementos inversos existen en el conjunto $F$.
+	
+	Inversos izquierdos:
+	$$ 
+	(i+\sqrt{2}) * (a+\sqrt{2}) = e+\sqrt{2}
+	 $$
+	$$
+	 (i+a)+\sqrt{2} = 0+\sqrt{2} 
+	 $$
+	Para que la igualdad se cumpla $i=-a$, con lo cual el inverso izquierdo es de la forma:
+	$$ 
+	i+\sqrt{2} = -a+\sqrt{2} \in F \quad \therefore \text{existe} 
+	$$
+	
+	Inversos derechos:
+	$$ 
+	(a+\sqrt{2}) * (i+\sqrt{2}) = e+\sqrt{2} 
+	$$
+	$$ 
+	(a+i)+\sqrt{2} = 0+\sqrt{2} 
+	$$
+	De donde $i=-a$ para que la igualdad se cumpla, por lo que el inverso derecho es de la forma:
+	$$ 
+	i+\sqrt{2} = -a+\sqrt{2} \in F \quad \therefore \text{existe} 
+	$$
+	
+	Como ambos elementos inversos existen y son iguales, entonces podemos concluir que los elementos inversos existen en el conjunto $F$ y son de la forma $-a+\sqrt{2}$.
+
+
+**Dado que se cumplieron los cuatro axiomas, entonces podemos afirmar que el sistema $(F, *)$ tiene estructura de grupo.**
+
+
+
 
 <script src="https://giscus.app/client.js"
         data-repo="andresbasilea/LinearAlgebraSite"

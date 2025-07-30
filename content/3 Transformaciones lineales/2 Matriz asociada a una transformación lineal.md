@@ -40,6 +40,69 @@ $$
 
 
 
+### Ejercicio
+
+Sean los espacios vectoriales
+$$ 
+P_2 = \{ax^2 + bx + c \mid a, b, c \in \mathbb{R}\} 
+$$
+$$ 
+M = \left\{ \begin{bmatrix} a & b \\ b & c \end{bmatrix} \mid a, b, c \in \mathbb{R} \right\} 
+$$
+Ambos definidos sobre el campo real, y sea la transformación lineal $T: P_2 \to M$ definida por:
+$$ 
+T \left( ax^2 + bx + c \right) = \begin{bmatrix} a+c & 3b \\ 3b & a-c \end{bmatrix} \quad ; \forall a, b, c \in \mathbb{R} 
+$$
+Obtenga la matriz asociada a la transformación $T$.
+
+
+###### Solución
+Para obtener la matriz asociada a la transformación, se requiere una base del dominio y una del codominio. Consideremos las bases:
+$$ 
+A = \{x^2, x, 1\} \quad \text{y} \quad B = \left\{ \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix}, \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}, \begin{bmatrix} 0 & 0 \\ 0 & 1 \end{bmatrix} \right\} 
+$$
+Las imágenes de los elementos de la base $A$ son:
+$$ 
+T(x^2) = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} 
+$$
+$$ 
+T(x) = \begin{bmatrix} 0 & 3 \\ 3 & 0 \end{bmatrix} 
+$$
+$$ 
+T(1) = \begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix} 
+$$
+Obteniendo los vectores de coordenadas de estas imágenes referidas a la base $B$, tenemos:
+$$ 
+\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} = \alpha_1 \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix} + \alpha_2 \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix} + \alpha_3 \begin{bmatrix} 0 & 0 \\ 0 & 1 \end{bmatrix} 
+$$
+Al realizar las operaciones correspondientes y por igualdad de matrices, fácilmente puede llegarse a:
+$$ 
+\left( \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} \right)_B = (1, 0, 1)
+$$
+
+
+En forma análoga con las otras dos imágenes, se llega a:
+
+$$ 
+\begin{bmatrix} 0 & 3 \\ 3 & 0 \end{bmatrix} = \beta_1 \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix} + \beta_2 \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix} + \beta_3 \begin{bmatrix} 0 & 0 \\ 0 & 1 \end{bmatrix}
+$$
+
+$$ 
+ \implies \left( \begin{bmatrix} 0 & 3 \\ 3 & 0 \end{bmatrix} \right)_B = (0, 3, 0)
+$$
+
+$$ 
+\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix} = \gamma_1 \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix} + \gamma_2 \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix} + \gamma_3 \begin{bmatrix} 0 & 0 \\ 0 & 1 \end{bmatrix}
+$$
+$$ 
+\implies \left( \begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix} \right)_B = (1, 0, -1) 
+$$
+Con lo cual, la matriz asociada a la transformación viene dada por la disposición en columna de dichos vectores de coordenadas, esto es:
+$$ 
+M_B^A(T) = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 3 & 0 \\ 1 & 0 & -1 \end{bmatrix} 
+$$
+
+
 <script src="https://giscus.app/client.js"
         data-repo="andresbasilea/LinearAlgebraSite"
         data-repo-id="R_kgDOO-oDkA"
