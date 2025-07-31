@@ -68,7 +68,7 @@ comments: "false"
 - [[7 Formas cuádricas|Formas cuádricas]]
 
 ### Sobre la clase
-[[IGNORE Sobre la clase]]
+[[Sobre la clase]]
 
 <div style="position:relative;padding-bottom:56.25%;">
     <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->

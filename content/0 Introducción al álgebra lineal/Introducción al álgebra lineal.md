@@ -1,4 +1,4 @@
-El álgebra lineal, como se menciona en la introducción de la clase ([[IGNORE Sobre la clase]]), es una disciplina transversal a prácticamente todas las áreas del conocimiento, con aplicaciones que adquieren cada vez mayor relevancia en el mundo contemporáneo.
+El álgebra lineal, como se menciona en la introducción de la clase ([[Sobre la clase]]), es una disciplina transversal a prácticamente todas las áreas del conocimiento, con aplicaciones que adquieren cada vez mayor relevancia en el mundo contemporáneo.
 
 Soy consciente de que esta no es una materia sencilla de cursar. Yo mismo la estudié en la Facultad de Ingeniería hace apenas algunos años, y puedo decir que, aunque representa un reto importante, también ofrece recompensas intelectuales profundas. Siempre me ha gustado pensar en el álgebra lineal con la siguiente frase:
 
