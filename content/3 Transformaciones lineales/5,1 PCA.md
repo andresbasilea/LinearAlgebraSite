@@ -1,7 +1,5 @@
 ---
 ---
-
-
 ### Principal Component Analysis
 
 El Análisis de Componentes Principales (PCA) es una técnica de **reducción de dimensionalidad** que transforma un conjunto de variables posiblemente correlacionadas en un conjunto más pequeño de variables no correlacionadas, llamadas Componentes Principales (CP). Estas CP capturan la mayor parte de la **varianza** presente en los datos originales.
@@ -27,7 +25,7 @@ $$
 Donde $(X')^T$ es la transpuesta de la matriz de datos estandarizados. $\Sigma$ será una matriz simétrica de $p \times p$.
 
 #### Paso 3: Cálculo de los Valores y Vectores Propios
-Los valores y vectores propios de la matriz de covarianza son el corazón de PCA. Los vectores propios representan las direcciones (o ejes) de máxima varianza, y los valores propios asociados representan la magnitud de esa varianza a lo largo de esas direcciones.
+Los [[5 Valores y vectores propios]] de la matriz de covarianza son el corazón de PCA. Los vectores propios representan las direcciones (o ejes) de máxima varianza, y los valores propios asociados representan la magnitud de esa varianza a lo largo de esas direcciones.
 
 Para cada vector propio $\mathbf{v}$ y su valor propio $\lambda$, se cumple la siguiente ecuación:
 $$ 
@@ -90,3 +88,20 @@ Donde $Y$ es una matriz de $n \times k$. Las columnas de $Y$ son las nuevas comp
   height="700px" 
   style="border:none; border-radius: 8px;">
 </iframe>
+
+<script src="https://giscus.app/client.js"
+        data-repo="andresbasilea/LinearAlgebraSite"
+        data-repo-id="R_kgDOO-oDkA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOO-oDkM4CsOaa"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="noborder_light"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+</script>
+
