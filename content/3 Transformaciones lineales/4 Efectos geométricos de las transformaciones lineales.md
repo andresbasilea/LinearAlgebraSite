@@ -1,5 +1,4 @@
 
-
 ### Reflexión 
 
 Sobre el eje $x$:

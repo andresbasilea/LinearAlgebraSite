@@ -1,5 +1,3 @@
-
-
 ### Valores y vectores propios
 
 A las transformaciones lineales que se aplican de un espacio vectorial $V$ al mismo espacio $V$, se les conoce como operadores lineales.

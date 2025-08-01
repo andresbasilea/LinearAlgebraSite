@@ -1,3 +1,4 @@
+
 ## Transformación lineal
 
 Sean $V$ y $W$ espacios vectoriales definidos sobre el mismo campo $K$. La función $T: V \rightarrow W$ recibe el nombre de transformación y, los espacios $V$ y $W$ se llaman dominio y codominio de la transformación, respectivamente. Esquematicamente se tiene: 
