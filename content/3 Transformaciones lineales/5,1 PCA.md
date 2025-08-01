@@ -48,29 +48,25 @@ Donde $Y$ es una matriz de $n \times k$. Las columnas de $Y$ son las nuevas comp
 
 
 
-<div class="container mx-auto p-6 bg-white rounded-2xl shadow-xl max-w-4xl">
-    <header class="mb-6">
-        <h1 class="text-3xl font-bold text-gray-800 text-center">TensorFlow Projector</h1>
-        <p class="mt-2 text-gray-600 text-center">
-            This is an embedded view of the TensorFlow Projector tool.
-        </p>
-    </header>
 
-    <!-- The iframe to embed the external webpage -->
-    <iframe
-        src="https://projector.tensorflow.org/"
-        title="TensorFlow Projector Interactive Tool"
-        allowfullscreen>
-    </iframe>
 
-    <footer class="mt-6 text-center text-sm text-gray-500">
-        <p>Content is loaded from the original source:
-            <a href="https://projector.tensorflow.org/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">
-                projector.tensorflow.org
-            </a>
-        </p>
-    </footer>
-</div>
+
+
+
+
+
+
+# PCA
+
+
+
+<iframe 
+  src="https://projector.tensorflow.org/" 
+  width="100%" 
+  height="600px" 
+  style="border:none; border-radius: 8px;">
+</iframe>
+
 
 
 https://projector.tensorflow.org/
