@@ -59,3 +59,21 @@ $\newline$
 $\newline$
 
 5. Si $T: V \to V$ es un operador antihermitiano y $B$ es una base ortonormal de $V$, entonces $M_B^B(T)$ es una matriz antihermitiana.
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="andresbasilea/LinearAlgebraSite"
+        data-repo-id="R_kgDOO-oDkA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOO-oDkM4CsOaa"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+</script>

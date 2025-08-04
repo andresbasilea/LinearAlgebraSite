@@ -11,3 +11,21 @@ Si $\lambda_1, \lambda_2, \ldots, \lambda_k$ son los diferentes valores caracter
 
 
 Si el espacio vectorial $V$ está definido sobre un campo real, entonces el teorema espectral también se cumple para un operador $T$ simétrico.
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="andresbasilea/LinearAlgebraSite"
+        data-repo-id="R_kgDOO-oDkA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOO-oDkM4CsOaa"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+</script>

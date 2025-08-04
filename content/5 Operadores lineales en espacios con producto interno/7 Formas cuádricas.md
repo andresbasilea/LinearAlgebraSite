@@ -109,3 +109,23 @@ $$e' = d P_{12} + e P_{22}$$
 Como se puede apreciar en la ecuación (4), se trata de una ecuación de segundo grado donde el término $xy$ ya no aparece, lo cual quiere decir que los ejes de la cónica son coincidentes o paralelos a los ejes del nuevo sistema de referencia $x'$, $y'$.
 
 Para el caso de la ecuación general de segundo grado en $\mathbb{R}^3$, es decir, cuando se tienen superficies cónicas cuyos ejes sean oblicuos al sistema de referencia, el procedimiento a seguir para rotar dicho sistema, de tal manera que los nuevos ejes resulten coincidentes o paralelos a los ejes de la superficie, es exactamente el mismo al seguido para el caso de $\mathbb{R}^2$, con la única diferencia de que la matriz $A$ ahora será de $3 \times 3$ y se tendrán tres valores y tres vectores característicos.
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="andresbasilea/LinearAlgebraSite"
+        data-repo-id="R_kgDOO-oDkA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOO-oDkM4CsOaa"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+</script>
+
+

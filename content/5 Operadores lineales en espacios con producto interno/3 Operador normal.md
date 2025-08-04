@@ -21,3 +21,21 @@ Sea $V$ un espacio con producto interno y sea $T: V \to V$ un operador normal.
 ### Teorema
 
 Sea $V$ un espacio vectorial de dimensión finita definido en $\mathbb{C}$ con producto interno y sea $T: V \to V$ un operador normal. Existe una base ortonormal de $V$ formada por vectores característicos de $T$, lo cual garantiza que todo operador normal es diagonalizable.
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="andresbasilea/LinearAlgebraSite"
+        data-repo-id="R_kgDOO-oDkA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOO-oDkM4CsOaa"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+</script>
