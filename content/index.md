@@ -43,6 +43,7 @@ comments: "false"
 - [[3 Combinación lineal, dependencia lineal y generadores y bases|Combinación lineal, dependencia lineal y generadores y bases]]
 - [[4 Isomorfismo entre espacios vectoriales|Isomorfismo entre espacios vectoriales]]
 - [[5 Matriz de transición|Matriz de transición]]
+- [[6 Espacio renglón y espacio columna de una matriz]]
 
 ### Transformaciones lineales
 [[1 Transformaciones lineales|Transformaciones lineales]]
@@ -50,6 +51,7 @@ comments: "false"
 - [[3 Álgebra de transformaciones lineales|Álgebra de transformaciones lineales]]
 - [[4 Efectos geométricos de las transformaciones lineales|Efectos geométricos de las transformaciones lineales]]
 - [[5 Valores y vectores propios|Valores y vectores propios]]
+- [[5,1 PCA]]
 - [[6 Matrices similares y diagonalización|Matrices similares y diagonalización]]
 ### Espacios con producto interno
 [[1 Espacios con producto interno|Espacios con producto interno]]
@@ -57,6 +59,7 @@ comments: "false"
 - [[3 Conjuntos ortogonales y ortonormales|Conjuntos ortogonales y ortonormales]]
 - [[4 Complemento ortogonal y proyección de un vector sobre un subespacio|Complemento ortogonal y proyección de un vector sobre un subespacio]]
 - [[5 Mínimos cuadrados|Mínimos cuadrados]]
+- [[6 Álgebra lineal y la música]]
 
 ### Operadores lineales en espacios con producto interno
 [[1 Operadores lineales en espacios con producto interno|Operadores lineales en espacios con producto interno]]

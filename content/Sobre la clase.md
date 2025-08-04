@@ -41,10 +41,14 @@ https://www.ingenieria.unam.mx/programas_academicos/licenciatura/Computacion/202
 >En caso de que el alumno no acepte exentar y quiera presentar examen final, los porcentajes se mantendrán como fueron indicados anteriormente.
 
 ### Entrega de tareas
-- Todas las tareas deben de ser entregadas en formato LaTex (pueden utilizar cualquier *template* que les guste). 
+- Todas las tareas de ejercicios deben de entregarse en PDF
+- Todas las tareas **de investigación** deben de ser entregadas en formato LaTex (pueden utilizar cualquier *template* que les guste). 
 - Recomiendo la utilización de [*Overleaf*](https://www.overleaf.com/) para tener templates rápidos de usar y poder compilar sin instalar nada. 
 
 ### Contacto
 
-Cualquier duda o comentario sobre la clase, contáctame al correo **andresbasilealvarez@gmail.com**
+Cualquier duda o comentario sobre la clase, contáctame al correo **algebralineal.andresbasile@gmail.com**
+
+
+
 

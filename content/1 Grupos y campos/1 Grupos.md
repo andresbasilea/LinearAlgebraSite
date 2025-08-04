@@ -2,6 +2,11 @@
 
 ---
 
+
+Antes de comenzar formalmente con el curso de álgebra lineal, es importante recordar los distintos 
+
+![[Pasted image 20250803185542.png]]
+
 ### Operación binaria
 Una operación binaria definida en un conjunto no vacío $A$, es una regla o criterio que asigna a cada par ordenado de elementos de $A$, un único elemento llamado resultado, que puede o no pertenecer al mismo conjunto $A$. 
 
