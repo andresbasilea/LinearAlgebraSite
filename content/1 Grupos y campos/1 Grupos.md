@@ -2,13 +2,27 @@
 
 ---
 
-
-Antes de comenzar formalmente con el curso de álgebra lineal, es importante recordar los distintos 
-
-![[Pasted image 20250803185542.png]]
-
 ### Operación binaria
 Una operación binaria definida en un conjunto no vacío $A$, es una regla o criterio que asigna a cada par ordenado de elementos de $A$, un único elemento llamado resultado, que puede o no pertenecer al mismo conjunto $A$. 
+
+![[Pasted image 20250803191150.png]]
+
+Las operaciones binarias son la piedra angular de la mayoría de las estructuras que se estudian en álgebra, en particular en semigrupos, monoides, **grupos**, anillos, **campos** y **espacios vectoriales**.
+
+Por ejemplo, algunas operaciones binarias en conjuntos de números que ya conocen: 
+
+![[Screenshot 2025-08-03 at 7.15.12 p.m..png]]
+
+Y algunos ejemplos de símbolos utilizados para representar una operación binaria: 
+
+![[Pasted image 20250803192147.png]]
+
+>[!info] Los símbolos utilizados para las operaciones binarias
+>Los símbolos utilizados para las operaciones binarias generalmente siguen una convención. Por ejemplo, el símbolo *+* suele representar la suma en el conjunto de los números reales. Esta convención es ampliamente aceptada por matemáticos, ingenieros y otros profesionales. Sin embargo, se podría definir una operación binaria diferente, como $a+b=a^2+b.$
+>En este curso, veremos que la operación binaria puede definirse de manera particular para cada grupo o aplicación que se estudie.
+
+
+
 
 ### Estructura de grupo
 
