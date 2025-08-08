@@ -18,7 +18,7 @@ Y algunos ejemplos de símbolos utilizados para representar una operación binar
 ![[Pasted image 20250803192147.png]]
 
 >[!info] Los símbolos utilizados para las operaciones binarias
->Los símbolos utilizados para las operaciones binarias generalmente siguen una convención. Por ejemplo, el símbolo *+* suele representar la suma en el conjunto de los números reales. Esta convención es ampliamente aceptada por matemáticos, ingenieros y otros profesionales. Sin embargo, se podría definir una operación binaria diferente, como $a+b=a^2+b.$
+>Los símbolos utilizados para las operaciones binarias generalmente siguen una convención. Por ejemplo, el símbolo *+* suele representar la suma en el conjunto de los números reales. Esta convención es ampliamente aceptada por matemáticos, ingenieros y otros profesionales. Sin embargo, se podría definir una operación binaria diferente, como $a+b=a^2.$
 >En este curso, veremos que la operación binaria puede definirse de manera particular para cada grupo o aplicación que se estudie.
 
 
@@ -28,8 +28,8 @@ Y algunos ejemplos de símbolos utilizados para representar una operación binar
 
   Sea $A$ un conjunto no vacío y sea $*$ una operación binaria definida en $A$. Se dice que el sistema $(A, \ast)$ tiene estructura de grupo si se cumplen los siguientes axiomas: 
 
-  - **1) Cerradura:** $\forall a, b \in A$ $(a \ast b) \in A$ 
-  - **2) Asociatividad:** $\forall a, b, c \in A$ $a \ast (b \ast c) = (a \ast b) \ast c$ 
+  - **1) Cerradura:** $\forall a, b \in A ;$ $(a \ast b) \in A$ 
+  - **2) Asociatividad:** $\forall a, b, c \in A ;$ $a \ast (b \ast c) = (a \ast b) \ast c$ 
   - **3) Existencia del elemento idéntico:** $\forall a \in A; \exists e \in A \mid a \ast e = e \ast a = a$ 
   - **4) Existencia de elementos inversos:** $\forall a \in A; \exists i \in A \mid a \ast i = i \ast a = e$ 
   
