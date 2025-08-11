@@ -24,12 +24,12 @@ https://www.ingenieria.unam.mx/programas_academicos/licenciatura/Computacion/202
 ### Evaluación
 
 - **Examen final**: 30%
-- **Exámenes parciales**: 40%
-- **Tareas y/o trabajo en clase**: 30%
+- **Exámenes parciales**: 30%
+- **Tareas y/o trabajo en clase**: 40%
 
 >[!info] Exentar el examen final
 >El alumno que promedie más de **6.0** en los exámenes parciales y que **no haya reprobado ninguno**, tendrá derecho a exentar el examen final. 
->En caso de exentar (y que el alumno acepte la exención) la calificación será **70% exámenes parciales y 30% tareas y/o trabajo en clase**.
+>En caso de exentar (y que el alumno acepte la exención) la calificación será **60% exámenes parciales y 40% tareas y/o trabajo en clase**.
 >En caso de que el alumno no acepte exentar y quiera presentar examen final, los porcentajes se mantendrán como fueron indicados anteriormente.
 
 ### Entrega de tareas
