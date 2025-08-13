@@ -52,7 +52,7 @@ De la segunda ecuación, si $b \ne 0$, podemos dividir entre $b$ para obtener $e
 Por lo tanto, el elemento idéntico del sistema es $(1, 1)$.
 
 >[!interesante] Nota sobre el ejercicio: 
->Al estar obteniendo el elemento idéntico para una operación binaria que desconocemos si es conmutativa, deberíamos de primero obtener el elemento idéntico por la izquierda (como en el ejercicio) y después hacer el mismo procedimiento para el elemento idéntico por la derecha. En caso de ser iguales, decimos que (1,1) es el elemento idéntico del sistema. 
+>Al estar obteniendo el elemento idéntico para una operación binaria que desconocemos si es conmutativa, deberíamos de primero obtener el elemento idéntico derecho (como en el ejercicio) y después hacer el mismo procedimiento para el elemento idéntico izquierdo. En caso de ser iguales, decimos que (1,1) es el elemento idéntico del sistema. 
 
 
 
