@@ -22,6 +22,39 @@ Y algunos ejemplos de símbolos utilizados para representar una operación binar
 >En este curso, veremos que la operación binaria puede definirse de manera particular para cada grupo o aplicación que se estudie.
 
 
+#### Ejercicio de Operación Binaria 
+
+Sea el sistema $(A, *)$, donde $A = \{(a, b) \mid a, b \in \mathbb{R}\}$ y la operación binaria definida como
+$$
+(a, b) * (c, d) = (ac, bd)
+$$
+obtener el elemento idéntico.
+
+**Solución:**
+
+Para encontrar el elemento idéntico, denotado por $(e_1, e_2)$, se debe cumplir que para cualquier $(a, b) \in A$:
+$$
+(a, b) * (e_1, e_2) = (a, b)
+$$
+
+Sustituyendo la definición de la operación, obtenemos:
+$$
+(a \cdot e_1, b \cdot e_2) = (a, b)
+$$
+
+Para que la igualdad de pares ordenados se cumpla, sus componentes deben ser iguales. Esto nos lleva al siguiente sistema de ecuaciones:
+$$a \cdot e_1 = a \; y \; b \cdot e_2 = b$$
+
+De la primera ecuación, si $a \ne 0$, podemos dividir entre $a$ para obtener $e_1 = 1$. Dado que el elemento idéntico debe funcionar para todos los valores de $a \in \mathbb{R}$, y la ecuación $0 \cdot e_1 = 0$ es cierta para cualquier $e_1$, el valor que satisface a todos los casos es $e_1 = 1$.
+
+De la segunda ecuación, si $b \ne 0$, podemos dividir entre $b$ para obtener $e_2 = 1$. De manera similar, el valor que satisface la ecuación para todos los valores de $b \in \mathbb{R}$ es $e_2 = 1$.
+
+Por lo tanto, el elemento idéntico del sistema es $(1, 1)$.
+
+>[!info] Nota sobre el ejercicio: 
+>Al estar obteniendo el elemento idéntico para una operación binaria que desconocemos si es conmutativa, deberíamos de primero obtener el elemento idéntico por la izquierda (como en el ejercicio) y después hacer el mismo procedimiento para el elemento idéntico por la derecha. En caso de ser iguales, decimos que (1,1) es el elemento idéntico del sistema. 
+
+
 
 
 ### Estructura de grupo
