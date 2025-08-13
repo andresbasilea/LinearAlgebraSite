@@ -21,38 +21,51 @@ Y algunos ejemplos de símbolos utilizados para representar una operación binar
 >Los símbolos utilizados para las operaciones binarias generalmente siguen una convención. Por ejemplo, el símbolo *+* suele representar la suma en el conjunto de los números reales. Esta convención es ampliamente aceptada por matemáticos, ingenieros y otros profesionales. Sin embargo, se podría definir una operación binaria diferente, como $a+b=a^2.$
 >En este curso, veremos que la operación binaria puede definirse de manera particular para cada grupo o aplicación que se estudie.
 
+#### Propiedades de las operaciones binarias
 
-#### Ejercicio de Operación Binaria 
+- Cerradura 
+- Asociatividad
+- Existencia del elemento idéntico
+- Existencia de elementos inversos
 
-Sea el sistema $(A, *)$, donde $A = \{(a, b) \mid a, b \in \mathbb{R}\}$ y la operación binaria definida como
-$$
-(a, b) * (c, d) = (ac, bd)
-$$
-obtener el elemento idéntico.
+## Introducción a grupos
 
-**Solución:**
+#### Sistema algebraico
 
-Para encontrar el elemento idéntico, denotado por $(e_1, e_2)$, se debe cumplir que para cualquier $(a, b) \in A$:
-$$
-(a, b) * (e_1, e_2) = (a, b)
-$$
+Cuando un conjunto está provisto de una o varias operaciones binarias se tiene un sistema algebraico
 
-Sustituyendo la definición de la operación, obtenemos:
-$$
-(a \cdot e_1, b \cdot e_2) = (a, b)
-$$
+Ejemplos:
 
-Para que la igualdad de pares ordenados se cumpla, sus componentes deben ser iguales. Esto nos lleva al siguiente sistema de ecuaciones:
-$$a \cdot e_1 = a \; y \; b \cdot e_2 = b$$
+- $(R,+)$
+    
+- $(N,∗)$
+    
+- $(Q^+,+,∗)$
+    
+- $(G,Δ)$
+    
+- $(M,Δ,∘)$
+    
+#### Estructura
 
-De la primera ecuación, si $a \ne 0$, podemos dividir entre $a$ para obtener $e_1 = 1$. Dado que el elemento idéntico debe funcionar para todos los valores de $a \in \mathbb{R}$, y la ecuación $0 \cdot e_1 = 0$ es cierta para cualquier $e_1$, el valor que satisface a todos los casos es $e_1 = 1$.
+La estructura del sistema algebraico está determinada por las operaciones definidas en el conjunto.
 
-De la segunda ecuación, si $b \ne 0$, podemos dividir entre $b$ para obtener $e_2 = 1$. De manera similar, el valor que satisface la ecuación para todos los valores de $b \in \mathbb{R}$ es $e_2 = 1$.
+Ejemplos de estructuras:
 
-Por lo tanto, el elemento idéntico del sistema es $(1, 1)$.
+- Grupos
+    
+- Anillos
+    
+- Campos
 
->[!interesante] Nota sobre el ejercicio: 
->Al estar obteniendo el elemento idéntico para una operación binaria que desconocemos si es conmutativa, deberíamos de primero obtener el elemento idéntico derecho (como en el ejercicio) y después hacer el mismo procedimiento para el elemento idéntico izquierdo. En caso de ser iguales, decimos que (1,1) es el elemento idéntico del sistema. 
+#### Comportamiento algebraico
+
+En conjuntos formados por elementos de diferente naturaleza, las operaciones obedecen a las mismas leyes. Esto implica que ambos sistemas tienen un mismo comportamiento algebraico.
+
+
+![[Pasted image 20250812221207.png]]
+
+![[Pasted image 20250812221234.png]]
 
 
 
@@ -108,7 +121,46 @@ Un sistema $(A,*)$ tiene estructura de grupo abeliano si se cumplen los siguient
 
 ## Ejercicios
 
->[!interesante] **Ejercicio 1**
+
+
+>[!Example] Ejercicio de operación binaria
+>Sea el sistema $(A, *)$, donde $A = \{(a, b) \mid a, b \in \mathbb{R}\}$ y la operación binaria definida como
+>$$
+>(a, b) * (c, d) = (ac, bd)
+>$$
+>obtener el elemento idéntico.
+
+**Solución:**
+
+Para encontrar el elemento idéntico, denotado por $(e_1, e_2)$, se debe cumplir que para cualquier $(a, b) \in A$:
+$$
+(a, b) * (e_1, e_2) = (a, b)
+$$
+
+Sustituyendo la definición de la operación, obtenemos:
+$$
+(a \cdot e_1, b \cdot e_2) = (a, b)
+$$
+
+Para que la igualdad de pares ordenados se cumpla, sus componentes deben ser iguales. Esto nos lleva al siguiente sistema de ecuaciones:
+$$a \cdot e_1 = a \; y \; b \cdot e_2 = b$$
+
+De la primera ecuación, si $a \ne 0$, podemos dividir entre $a$ para obtener $e_1 = 1$. Dado que el elemento idéntico debe funcionar para todos los valores de $a \in \mathbb{R}$, y la ecuación $0 \cdot e_1 = 0$ es cierta para cualquier $e_1$, el valor que satisface a todos los casos es $e_1 = 1$.
+
+De la segunda ecuación, si $b \ne 0$, podemos dividir entre $b$ para obtener $e_2 = 1$. De manera similar, el valor que satisface la ecuación para todos los valores de $b \in \mathbb{R}$ es $e_2 = 1$.
+
+Por lo tanto, el elemento idéntico del sistema es $(1, 1)$.
+
+>[!interesante] Nota sobre el ejercicio: 
+>Al estar obteniendo el elemento idéntico para una operación binaria que desconocemos si es conmutativa, deberíamos de primero obtener el elemento idéntico derecho (como en el ejercicio) y después hacer el mismo procedimiento para el elemento idéntico izquierdo. En caso de ser iguales, decimos que (1,1) es el elemento idéntico del sistema. 
+
+
+
+
+
+
+
+>[!Example] **Ejercicio de grupos**
 >Determina si el sistema $(F, *)$ tiene estructura de grupo, donde: 
 >
 >El conjunto dado es $F = \{a+\sqrt{2} \mid a \in \mathbb{R}\}$ y la operación binaria $*$ está definida por $(a+\sqrt{2}) * (b+\sqrt{2}) = (a+b)+\sqrt{2}$.
