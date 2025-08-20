@@ -2,7 +2,8 @@
 
 ---
 
-### Estructura de campo
+![[Pasted image 20250812221234.png]]
+### Estructura de Campo (también llamado Cuerpo)
 
 Sea $A$ un conjunto de por lo menos dos elementos y sean $*$ y $\square$ dos operaciones binarias definidas en $A$. El sistema $(A, *, \square)$ tiene estructura de campo si se cumple que:
 
@@ -54,8 +55,16 @@ Sea $A$ un conjunto de por lo menos dos elementos y sean $*$ y $\square$ dos ope
 -  $(A, \square)$ cumple con los cinco axiomas de grupo abeliano, donde deben existir inversos para todos los elementos del conjunto excepto para el "cero" de campo.
 - Al elemento idéntico de la segunda operación se le conoce como la "unidad" del campo.
 - La operación $\square$ es distributiva sobre $*$.
+- La primera operación se conoce como **adición** y la segunda como **multiplicación**.
 
 
+### Algunos ejemplos de campos
+- El conjunto de los números reales $\mathbb{R}$, con las operaciones usuales de adición y multiplicación definidas en $\mathbb{R}$.
+	- ($\mathbb{R}$, +, \*)
+- El conjunto de los números complejos $\mathbb{C}$ , con las operaciones usuales de adición y de multiplicación definidas en $\mathbb{C}$
+	-  ($\mathbb{C}$, +, \*)
+- El conjunto de los números racionales $\mathbb{Q}$, con las operaciones usuales de adición y de multiplicación definidas en $\mathbb{Q}$
+	-  ($\mathbb{Q}$, +, \*)
 
 
 
