@@ -29,17 +29,50 @@ En resumen, la belleza de la definición de un espacio vectorial radica en su ab
 
 ### ¿Qué puede ser un vector?
 
+<div style="position:relative;padding-bottom:56.25%;">
+    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="_transformaciones/2Dvector.html">
+    </iframe>
+</div>
+
 En su esencia, un vector es un elemento de un **espacio vectorial**, lo que significa que cumple con ciertas reglas que permiten sumarlo con otros vectores y multiplicarlo por escalares.
 
 Dependiendo del contexto, un vector puede ser:
 
 - **Una flecha en el espacio:** Esta es la definición más intuitiva y la que se usa en física. Un vector de desplazamiento, por ejemplo, te dice "muévete 3 metros al este y 4 metros al norte". En este caso, el vector se representa como (3,4).
-    
-- **Un polinomio:** El conjunto de todos los polinomios de un cierto grado (por ejemplo, los de grado 2) puede formar un espacio vectorial. Un polinomio como 5x2+2x−1 puede ser tratado como un vector (5,2,−1).
-    
-- **Una función:** El conjunto de todas las funciones continuas en un intervalo, por ejemplo, es un espacio vectorial. En este caso, el "vector" es la función misma. Puedes sumar dos funciones o multiplicar una función por un número, y el resultado sigue siendo una función.
 
 >[!interesante] ¿Se te ocurre algo adicional que pueda verse como vector? 
+
+
+- **Una función:** El conjunto de todas las funciones continuas en un intervalo, por ejemplo, es un espacio vectorial. En este caso, el "vector" es la función misma. Puedes sumar dos funciones o multiplicar una función por un número, y el resultado sigue siendo una función.
+
+
+<div style="position:relative;padding-bottom:56.25%;">
+    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="_transformaciones/2DFunctionsSum.html">
+    </iframe>
+</div>
+
+
+    
+- **Un polinomio:** El conjunto de todos los polinomios de un cierto grado (por ejemplo, los de grado 2) puede formar un espacio vectorial. Un polinomio como $5x^2+2x−1$ puede ser tratado como un vector (5,2,−1).
+    
+
+
 
 ### ¿Cuál es la relación con [[1 Grupos|Grupos]] y [[2 Campos|Campos]]?
 
@@ -57,9 +90,9 @@ $\forall \vec{u}, \vec{v}, \vec{w} \in V \quad \text{y} \quad \forall \alpha, \b
 
 1.  $(\vec{u} + \vec{v}) \in V$ 
 2. $(\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w})$ 
-3. $\exists \vec{0} \in V \mid \forall \vec{u} \in V; \quad \vec{u} + \vec{0} = \vec{0} + \vec{u} = \vec{u}$ 
-4. $\forall \vec{u} \in V; \quad \exists (-\vec{u}) \in V \mid \vec{u} + (-\vec{u}) = (-\vec{u}) + \vec{u} = \vec{0}$ 
-5. $\vec{u} + \vec{v} = \vec{v} + \vec{u}$ 
+3. $\vec{u} + \vec{v} = \vec{v} + \vec{u}$ 
+4. $\exists \vec{0} \in V \mid \forall \vec{u} \in V; \quad \vec{u} + \vec{0} = \vec{0} + \vec{u} = \vec{u}$ 
+5. $\forall \vec{u} \in V; \quad \exists (-\vec{u}) \in V \mid \vec{u} + (-\vec{u}) = (-\vec{u}) + \vec{u} = \vec{0}$ 
 6. $(\alpha \vec{u}) \in V$ 
 7. $\alpha (\vec{u} + \vec{v}) = \alpha \vec{u} + \alpha \vec{v}$ 
 8. $(\alpha + \beta) \vec{u} = \alpha \vec{u} + \beta \vec{u}$ 
@@ -67,6 +100,13 @@ $\forall \vec{u}, \vec{v}, \vec{w} \in V \quad \text{y} \quad \forall \alpha, \b
 10. Si $1$ es la unidad de $K$, entonces $1 \vec{u} = \vec{u} \; ; \quad \forall \vec{u} \in V$ 
 
 A los elementos del conjunto $V$ se les llama vectores y a los elementos del campo $K$ se les llama escalares.
+
+
+
+
+
+
+
 
 <script src="https://giscus.app/client.js"
         data-repo="andresbasilea/LinearAlgebraSite"
