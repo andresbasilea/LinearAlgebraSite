@@ -27,6 +27,26 @@ En resumen, la belleza de la definición de un espacio vectorial radica en su ab
 
 ![[Pasted image 20250727195812.png|600]]
 
+### Definición formal
+
+Sea $V$ un conjunto no vacío, en el cual se definen dos operaciones llamadas adición y multiplicación por un escalar y, sea $K$ un campo. Se dice que $V$ es un espacio vectorial sobre $K$ si las dos operaciones cumplen con los diez axiomas siguientes: 
+
+$\forall \vec{u}, \vec{v}, \vec{w} \in V \quad \text{y} \quad \forall \alpha, \beta \in K$
+
+1. $(\vec{u} + \vec{v}) \in V$ 
+2. $(\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w})$ 
+3. $\vec{u} + \vec{v} = \vec{v} + \vec{u}$ 
+4. $\exists \vec{0} \in V \mid \forall \vec{u} \in V; \quad \vec{u} + \vec{0} = \vec{0} + \vec{u} = \vec{u}$ 
+5. $\forall \vec{u} \in V; \quad \exists (-\vec{u}) \in V \mid \vec{u} + (-\vec{u}) = (-\vec{u}) + \vec{u} = \vec{0}$ 
+6. $(\alpha \vec{u}) \in V$ 
+7. $\alpha (\vec{u} + \vec{v}) = \alpha \vec{u} + \alpha \vec{v}$ 
+8. $(\alpha + \beta) \vec{u} = \alpha \vec{u} + \beta \vec{u}$ 
+9. $\alpha (\beta \vec{u}) = (\alpha \beta) \vec{u}$ 
+10. Si $1$ es la unidad de $K$, entonces $1 \vec{u} = \vec{u} \; ; \quad \forall \vec{u} \in V$ 
+
+A los elementos del conjunto $V$ se les llama vectores y a los elementos del campo $K$ se les llama escalares.
+
+
 ### ¿Qué puede ser un vector?
 
 <div style="position:relative;padding-bottom:56.25%;">
@@ -68,7 +88,11 @@ Dependiendo del contexto, un vector puede ser:
 </div>
 
 
-    
+![[Pasted image 20250824110843.png]]
+
+
+
+
 - **Un polinomio:** El conjunto de todos los polinomios de un cierto grado (por ejemplo, los de grado 2) puede formar un espacio vectorial. Un polinomio como $5x^2+2x−1$ puede ser tratado como un vector (5,2,−1).
     
 
@@ -82,24 +106,45 @@ Un espacio vectorial se trata de un conjunto de vectores $V$ y un campo de escal
     
 2. **Multiplicación por un escalar:** Debe haber una operación que tome un escalar del campo $K$ y un vector de $V$ para producir otro vector de $V$, y esta operación debe cumplir ciertas propiedades de distribución y asociatividad con los elementos del campo.
 
-### Definición formal
+ 
+ <div style="position:relative;padding-bottom:56.25%;">
+    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="_transformaciones/2DScalarMult.html">
+    </iframe>
+</div>
 
-Sea $V$ un conjunto no vacío, en el cual se definen dos operaciones llamadas adición y multiplicación por un escalar y, sea $K$ un campo. Se dice que $V$ es un espacio vectorial sobre $K$ si las dos operaciones cumplen con los diez axiomas siguientes: 
 
-$\forall \vec{u}, \vec{v}, \vec{w} \in V \quad \text{y} \quad \forall \alpha, \beta \in K$
+### Propiedades de la adición
 
-1.  $(\vec{u} + \vec{v}) \in V$ 
-2. $(\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w})$ 
-3. $\vec{u} + \vec{v} = \vec{v} + \vec{u}$ 
-4. $\exists \vec{0} \in V \mid \forall \vec{u} \in V; \quad \vec{u} + \vec{0} = \vec{0} + \vec{u} = \vec{u}$ 
-5. $\forall \vec{u} \in V; \quad \exists (-\vec{u}) \in V \mid \vec{u} + (-\vec{u}) = (-\vec{u}) + \vec{u} = \vec{0}$ 
-6. $(\alpha \vec{u}) \in V$ 
-7. $\alpha (\vec{u} + \vec{v}) = \alpha \vec{u} + \alpha \vec{v}$ 
-8. $(\alpha + \beta) \vec{u} = \alpha \vec{u} + \beta \vec{u}$ 
-9. $\alpha (\beta \vec{u}) = (\alpha \beta) \vec{u}$ 
-10. Si $1$ es la unidad de $K$, entonces $1 \vec{u} = \vec{u} \; ; \quad \forall \vec{u} \in V$ 
+Si $V$ es un espacio vectorial sobre $K$, entonces:
 
-A los elementos del conjunto $V$ se les llama vectores y a los elementos del campo $K$ se les llama escalares.
+ $\forall \; \vec{u}, \vec{v}, \vec{w} \; \in \; V :$ 
+ 
+ 1) $\vec{u} + \vec{v} = \vec{u} + \vec{w} \implies \vec{v} = \vec{w}$ 
+ 2) El vector $\vec{0}$ es único y es tal que $\vec{v} + \vec{0} = \vec{v}, \quad \forall \vec{v} \in V$ 
+ 3) El vector $\widehat{\vec{v}}$ es único y es tal que $\vec{v} + \widehat{\vec{v}} = \vec{0}$ 
+ 4) La ecuación $\vec{u} + \vec{x} = \vec{v}$ tiene solución única en $V$ (es decir, $\vec{x}$ pertenece a $V$)
+ 5) $\forall \; \vec{v} \; \in V : \widehat{(\widehat{\vec{v}})} = \vec{v}$ 
+
+
+### Propiedades para la multiplicación por un escalar
+
+Sea $V$ es un espacio vectorial sobre $K$
+$\forall \; \vec{u}, \vec{v} \; \in \; V; \; \alpha, \beta \; \in \; K$
+
+1) $0\vec{v} = \vec{0}$, donde $0$ es el **cero** de $K$ 
+2) $\alpha\vec{0} = \vec{0}$ 
+3) $(-\alpha)\vec{v} = -(\alpha\vec{v}) = \alpha(-\vec{v})$
+4) $\alpha\vec{v} = \vec{0} \implies \alpha = 0 \text{ ó } \vec{v} = \vec{0}$ 
+5) $\alpha\vec{u} = \alpha\vec{v} \quad \text{y} \quad \alpha \neq 0 \implies \vec{u} = \vec{v}$ 
+6) $\alpha\vec{v} = \beta\vec{v} \quad \text{y} \quad \vec{v} \neq \vec{0} \implies \alpha = \beta$ 
 
 
 

@@ -33,6 +33,19 @@ Sea $V$ un espacio vectorial sobre un campop $K$. Si $W$ es un subconjunto no va
 - $\forall \; \vec{u} \in W \; y \; \forall \; \alpha \in K, \; \color{purple} (\alpha \vec{u})\in W$
 
 
+<div style="position:relative;padding-bottom:56.25%;">
+    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="_transformaciones/Subspaces.html">
+    </iframe>
+</div>
+
 <br>
 >[!interesante] ¿Y si no pasa / contiene al origen?
 >Un plano en $R^3$ que no pasa por el origen no es un subespacio de $R^3$ porque el plano no contiene al vector cero de $R^3$. De manera similar, una línea en $R^2$ que no pasa por el origen, como en la figura, no es un subespacio de $R^2$.

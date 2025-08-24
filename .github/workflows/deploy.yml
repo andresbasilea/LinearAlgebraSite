@@ -60,6 +60,10 @@ jobs:
           find public/ -type f -name "transformacion_js" -exec mv {} {}.html \;
           find public/ -type f -name "2DVector" -exec mv {} {}.html \;
           find public/ -type f -name "2DFunctionsSum" -exec mv {} {}.html \;
+          find public/ -type f -name "2DScalarMult" -exec mv {} {}.html \;
+          find public/ -type f -name "Subspaces" -exec mv {} {}.html \;
+
+
 
 
 
