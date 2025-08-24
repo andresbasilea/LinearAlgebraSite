@@ -137,6 +137,7 @@ Si $V$ es un espacio vectorial sobre $K$, entonces:
 ### Propiedades para la multiplicación por un escalar
 
 Sea $V$ es un espacio vectorial sobre $K$
+
 $\forall \; \vec{u}, \vec{v} \; \in \; V; \; \alpha, \beta \; \in \; K$
 
 1) $0\vec{v} = \vec{0}$, donde $0$ es el **cero** de $K$ 
