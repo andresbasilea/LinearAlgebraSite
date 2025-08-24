@@ -58,7 +58,7 @@ A los elementos del conjunto $V$ se les llama vectores y a los elementos del cam
         height="100%"
         allowfullscreen
         allow="autoplay"
-        src="_transformaciones/2Dvector.html">
+        src="_transformaciones/2DVector.html">
     </iframe>
 </div>
 
