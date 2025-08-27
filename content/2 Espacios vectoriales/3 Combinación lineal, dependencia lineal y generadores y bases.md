@@ -39,8 +39,7 @@ El ejemplo anterior ilustra perfectamente que toda combinación lineal desemboca
 
 - **Sistema de ecuaciones lineales determinado**: La combinación lineal es única; es decir, cada escalar de la combinación posee un único valor.
 - **Sistema de ecuaciones lineales compatible indeterminado**: Existen múltiples combinaciones lineales; los escalares dependen de parámetros libres.
-- **Sistema de ecuaciones lineales incompatible**: La combinación lineal no existe.
-
+- **Sistema de ecuaciones lineales incompatible**: La combinación lineal no existe. (se llega a un sistema de la forma $0=x$ donde $x$ es diferente a cero). Geométricamente lo podemos ver como lineas paralelas que nunca intersecan. 
 
 
 ## Dependencia Lineal
