@@ -53,7 +53,7 @@ Queremos representar al vector **Agua de Valencia** ($\vec{v}$) como una **combi
 
 ![[Screenshot 2025-08-31 at 4.28.05 p.m..png]]
 
-![[quartz/public/_span/linearCombination.mov|linearCombination]]
+![[linearCombination2.mov]]
 
 
 ## Dependencia Lineal
