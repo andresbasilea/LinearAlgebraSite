@@ -62,6 +62,10 @@ jobs:
           find public/ -type f -name "2DFunctionsSum" -exec mv {} {}.html \;
           find public/ -type f -name "2DScalarMult" -exec mv {} {}.html \;
           find public/ -type f -name "Subspaces" -exec mv {} {}.html \;
+          find public/ -type f -name "linearCombination" -exec mv {} {}.mov \;
+          find public/ -type f -name "linearCombination" -exec mv {} {}.mp4 \;
+          find public/ -type f -name "linearCombination" -exec mv {} {} \;
+
 
 
 

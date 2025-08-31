@@ -42,6 +42,20 @@ El ejemplo anterior ilustra perfectamente que toda combinación lineal desemboca
 - **Sistema de ecuaciones lineales incompatible**: La combinación lineal no existe. (se llega a un sistema de la forma $0=x$ donde $x$ es diferente a cero). Geométricamente lo podemos ver como lineas paralelas que nunca intersecan. 
 
 
+![[Screenshot 2025-08-31 at 4.19.10 p.m..png]]
+
+Queremos representar al vector **Agua de Valencia** ($\vec{v}$) como una **combinación lineal** de los vectores: 
+- Champaña ($\vec{v_1}$)
+- Ginebra ($\vec{v_2}$)
+- Jugo de naranja ($\vec{v_3}$)
+- Vodka ($\vec{v_4}$)
+
+
+![[Screenshot 2025-08-31 at 4.28.05 p.m..png]]
+
+![[quartz/public/_span/linearCombination.mov|linearCombination]]
+
+
 ## Dependencia Lineal
 
 ### Definición formal
