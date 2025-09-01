@@ -267,12 +267,142 @@ Determinar el valor o los valores de $k$ para que el conjunto sea
 <iframe src="https://www.geogebra.org/3d/hpuwnyvd?embed" width="800" height="700" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 
+#### Ejercicio 4
+
+Determinar si el conjunto 
+
+$$
+A = \{ \begin{pmatrix} -3 & 4 \\ 1 & 2 \end{pmatrix}, \begin{pmatrix} -8 & 1 \\ 1 & 1 \end{pmatrix}, \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}, \begin{pmatrix} 1 & 4 \\ -1 & 0 \end{pmatrix} \}
+$$
+Es linealmente independiente o linealmente dependiente.
+
+
 ## Conjunto Generador
 
 ### Definición formal
 Sea $V$ un espacio vectorial sobre $K$, y sea $G = \{\bar{v}_1, \bar{v}_2, \ldots, \bar{v}_n\}$ un conjunto de vectores de $V$. Se dice que $G$ es generador de $V$, si todo vector de $V$ puede expresarse como una combinación lineal de los vectores de $G$.
 
+Lo que es lo mismo: 
+
+$$ 
+\bar{x} = \alpha_1 \bar{v}_1 + \alpha_2 \bar{v}_2 + \dots + \alpha_n \bar{v}_n 
+$$
+para todo $\vec{x} \in V$.
+
+
 - **Si un vector se expresa como combinación lineal de un conjunto generador, existen infinitas posibilidades de expresar ese vector.**
+
+
+![[Screenshot 2025-08-31 at 9.05.58 p.m..png]]
+
+
+>[!note] Vectores genéricos de distintos espacios vectoriales
+>Para $\mathbb{R}^2$:
+>$$
+> \bar{x} = (a, b)
+>$$
+>
+>Para $P_3$:
+>$$
+>\bar{x} = ax^3 + bx^2 + cx + d
+>$$
+>
+>Para $\mathbb{R}^3$:
+>$$
+>\bar{x} = (x, y, z)
+>$$
+>
+>Para $M_{2\times2}$:
+>$$ 
+>\bar{x} = \begin{pmatrix} a & b \\ c & d \end{pmatrix}
+>$$
+>
+>Para $P_2$:
+>$$
+>\bar{x} = ax^2 + bx + c
+>$$
+>
+>Para $M_{3\times3}$:
+>$$
+> \bar{x} = \begin{pmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{pmatrix}
+> $$
+
+
+#### Ejercicio 1
+
+Determinar si el conjunto 
+$$
+A = \{(-2,0,0), (0,1,2), (0,0,-1), (0,1,-1)\}
+$$
+es un generador de $\mathbb{R}^3$
+
+De la definición de generador 
+$$
+\alpha\bar{v}_1 + \beta\bar{v}_2 + \gamma\bar{v}_3 + \delta\bar{v}_4 = \bar{x}
+$$
+
+$$
+\alpha(-2,0,0) + \beta(0,1,2) + \gamma(0,0,-1) + \delta(0,1,-1) = (x,y,z)
+$$
+
+Desarrollar y verificar que existen los escalares 
+$$
+(-2\alpha, \beta+\delta, 2\beta - \gamma - \delta) = (x,y,z)
+$$
+
+En este caso, no es necesario escalonar, dada la forma que tienen los vectores ya nos quedan las siguientes ecuaciones: 
+
+$$
+-2\alpha = x \; \dots(1)
+$$
+$$
+\beta + \delta = y \; \dots(2)
+$$
+$$
+2\beta - \gamma - \delta = z \;  \dots(3)
+$$
+
+Al haber más incógnitas (4) que ecuaciones (3), se debe de parametrizar. En este tipo de problemas, las incógnitas son los escalares $\alpha, \beta, \gamma, \delta$. Las componentes $x, y, z$ del vector genérico de $R_3$ las consideramos como datos o constantes. 
+
+$$
+-2\alpha = x \; \rightarrow \alpha = -\frac{x}{2}
+$$
+$$
+\beta + \delta = y \; \dots(2)
+$$
+$$
+\beta - \gamma - \delta = z  \; \dots (3)
+$$
+
+
+Si se toma $\delta$ como parámetro:
+$$
+\beta = y - \delta 
+$$
+$$
+ 2(y-\delta) - \gamma - \delta = z \longrightarrow \gamma = 2y - z - 3\delta
+$$
+
+
+Conjunto solución:
+
+$$
+\alpha = -\frac{x}{2}
+$$
+$$
+\beta = y - \delta
+$$
+$$
+\gamma = 2y - z - 3\delta
+$$
+$$
+para \; todo \; \delta \in \mathbb{R}
+$$
+
+**Como existen los escalares, el conjunto $A$ es generador de $\mathbb{R}^3$**
+
+Aquí podríamos dar por concluido el ejercicio. Pero si quisiéramos comprobar: 
+
 
 ## Base
 
