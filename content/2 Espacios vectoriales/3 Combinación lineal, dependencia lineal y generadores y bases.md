@@ -193,11 +193,78 @@ A = \{(1,1,-1), (2,-3,1), (3,-4,6)\}
 $$
 es linealmente dependiente o independiente:
 
+**Solución**:
+
+Para este ejercicio, ocuparíamos la ecuación de dependencia lineal: 
+
+$$
+\alpha(1,1,-1) + \beta(2,-3,1) + \gamma(3,-4,6) = (0,0,0)
+$$
+
+Para obtener un sistema de ecuaciones y escalonarlo ocupando el método de eliminación de Gauss para resolverlo. Alternativamente, podemos ocupar el determinante de los tres vectores del conjunto en forma de columnas y, si el resultado es diferente de 0, decimos que el conjunto de vectores es linealmente independiente: 
+
+$$
+det(A) = \begin{vmatrix} 1 & 2 & 3 \\ 1 & -3 & -4 \\ -1 & 1 & 6 \end{vmatrix}
+$$ 
+$$
+\det(A) = -24
+$$
+Como el valor es diferente de 0, decimos que el conjunto es linealmente independiente. 
+Gráficamente, observamos que los vectores que llamaremos $\vec{u}$ y $\vec{v}$ del conjunto $A$ forman un plano. Como el vector $\vec{w}$ no se encuentra dentro del plano, el espacio generado por estos tres vectores es todo el espacio $R_3$. 
+
+<iframe src="https://www.geogebra.org/3d/cdp5z4q5?embed" width="700" height="700" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+
+>[!interesante] ¿Por qué el determinante nos indica la dependencia lineal de un conjunto de vectores? 
+> El determinante proporciona información crucial sobre la transformación lineal que una matriz representa. Su significado varía ligeramente en la interpretación geométrica según la dimensión del espacio. En dos dimensiones, representaría cuánto escala las áreas después de aplicar una transformación lineal. Si ese escalamiento fuera igual a 0, diríamos que los vectores de esa matriz son linealmente dependientes, ya que deben de estar en la misma línea para dar ese resultado.
+> No te preocupes si esto no queda tan claro, lo veremos más a detalle en el capítulo [[1 Transformaciones lineales]].
+> 
+> Por lo pronto, mira el efecto del determinante en la siguiente visualización interactiva. **¿Qué características tienen que tener los vectores de un conjunto de dos dimensiones para que el determinante sea igual a 0 (linealmente dependientes)?**
+
+
+>##### Visualización del efecto de aplicar el determinante en dos dimensiones
+>
+>
+<div style="position:relative;padding-bottom:56.25%;">
+    <!-- 56.25 comes from aspect ratio of 16:9, change this accordingly -->
+    <iframe
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px; overflow: hidden;"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowfullscreen
+        allow="autoplay"
+        src="_transformaciones/determinante_js.html">
+    </iframe>
+</div>
 
 
 
+#### Ejercicio 2
+
+Determinar si el conjunto
+
+$A = {x^2 + 2x + 5, x^2 + 3x - 1, -x^2 + x + 2, x^2 + 3x + 2}$
+es linealmente dependiente o linealmente independiente.
+
+>[!interesante] Polinomios
+> Los polinomios con las operaciones usuales de suma y multiplicación por un escalar forman un espacio vectorial.
 
 
+#### Ejercicio 3 tipo examen 
+
+Sea el conjunto 
+
+$$
+A = \{(1,k,1), (1,-k,-1), (0,1,2)\}
+$$
+Determinar el valor o los valores de $k$ para que el conjunto sea
+1) Linealmente dependiente
+2) Linealmente independiente
+
+**La siguiente visualización te ayudará a comprender el porqué cuando $k=1/2$ el conjunto es linealmente dependiente. Mueve el Slider de "k" y comprueba la independencia o dependencia lineal para distintos valores**.
+
+<iframe src="https://www.geogebra.org/3d/hpuwnyvd?embed" width="700" height="700" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 
 ## Conjunto Generador
@@ -234,18 +301,6 @@ Dim V
 $$
 Si $V={\vec{0}}$ , entonces $Dim V=0$
 
-
-## Vector de coordenadas 
-
-Sea $B = \{\bar{v}_1, \bar{v}_2, \ldots, \bar{v}_n\}$ una base del espacio vectorial $V$ y sea $\bar{v}$ un vector cualquiera de $V$ tal que:
-$$
-\bar{v} = \alpha_1 \bar{v}_1 + \alpha_2 \bar{v}_2 + \ldots + \alpha_n \bar{v}_n
-$$
-A los escalares $\alpha_1, \alpha_2, \ldots, \alpha_n$ se les llama coordenadas de $\bar{v}$ en la base $B$ y al vector:
-$$
-(\bar{v})_B = (\alpha_1, \alpha_2, \ldots, \alpha_n)^T
-$$
-se le llama vector de coordenadas de $\bar{v}$ en la base $B$.
 
 
 ## Pero... ¿cómo se ve el espacio generado por dos vectores linealmente independientes en dos dimensiones?
@@ -291,6 +346,39 @@ se le llama vector de coordenadas de $\bar{v}$ en la base $B$.
         src="_span/span3d2.html">
     </iframe>
 </div>
+
+
+
+
+
+
+
+#### Ejercicio (en clase)
+
+ Sea el conjunto
+ $$
+ A = \{(-1, k, 2), (-1, 1, -1), (1, 0, 2)\}
+ $$
+ 1) Determine el valor de $k$ para que el conjunto $A$ sea linealmente dependiente. 
+ 2) **Con el valor obtenido en el inciso anterior, obtenga el espacio vectorial que genera el conjunto $A$.** 
+ 3) **Determine una base y la dimensión del espacio vectorial obtenido en el inciso anterior.** 
+
+
+
+
+
+## Vector de coordenadas 
+
+Sea $B = \{\bar{v}_1, \bar{v}_2, \ldots, \bar{v}_n\}$ una base del espacio vectorial $V$ y sea $\bar{v}$ un vector cualquiera de $V$ tal que:
+$$
+\bar{v} = \alpha_1 \bar{v}_1 + \alpha_2 \bar{v}_2 + \ldots + \alpha_n \bar{v}_n
+$$
+A los escalares $\alpha_1, \alpha_2, \ldots, \alpha_n$ se les llama coordenadas de $\bar{v}$ en la base $B$ y al vector:
+$$
+(\bar{v})_B = (\alpha_1, \alpha_2, \ldots, \alpha_n)^T
+$$
+se le llama vector de coordenadas de $\bar{v}$ en la base $B$.
+
 
 <script src="https://giscus.app/client.js"
         data-repo="andresbasilea/LinearAlgebraSite"

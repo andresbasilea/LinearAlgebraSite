@@ -6,9 +6,9 @@ Sean $U$ y $V$ dos espacios vectoriales de dimensión finita, definidos sobre un
 
 Los espacios vectoriales isomorfos solo difieren en la naturaleza de sus elementos, sus propiedades algebraicas son idénticas.
 
-### Ejemplos de isomorfismos
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+
+
 
 ### Teoremas
 
