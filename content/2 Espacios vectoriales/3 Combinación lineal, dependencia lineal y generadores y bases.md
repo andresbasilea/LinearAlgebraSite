@@ -135,7 +135,7 @@ $$
 
 Sean el espacio vectorial $\mathbb{R}^2$ y $S = \{(1, -1), (3, 0), (2, 1)\}$ un subconjunto de $\mathbb{R}^2$. Exprese de dos maneras diferentes al vector $\bar{v} = (5, 1)$ como una combinación lineal de los vectores de $S$.
 
-<iframe src="https://www.geogebra.org/graphing/vetmws2w?embed" width="700" height="700" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+<iframe src="https://www.geogebra.org/graphing/vetmws2w?embed" width="800" height="700" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 ## Dependencia Lineal
 
@@ -212,7 +212,7 @@ $$
 Como el valor es diferente de 0, decimos que el conjunto es linealmente independiente. 
 Gráficamente, observamos que los vectores que llamaremos $\vec{u}$ y $\vec{v}$ del conjunto $A$ forman un plano. Como el vector $\vec{w}$ no se encuentra dentro del plano, el espacio generado por estos tres vectores es todo el espacio $R_3$. 
 
-<iframe src="https://www.geogebra.org/3d/cdp5z4q5?embed" width="700" height="700" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+<iframe src="https://www.geogebra.org/3d/cdp5z4q5?embed" width="800" height="700" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 
 >[!interesante] ¿Por qué el determinante nos indica la dependencia lineal de un conjunto de vectores? 
@@ -264,7 +264,7 @@ Determinar el valor o los valores de $k$ para que el conjunto sea
 
 **La siguiente visualización te ayudará a comprender el porqué cuando $k=1/2$ el conjunto es linealmente dependiente. Mueve el Slider de "k" y comprueba la independencia o dependencia lineal para distintos valores**.
 
-<iframe src="https://www.geogebra.org/3d/hpuwnyvd?embed" width="700" height="700" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+<iframe src="https://www.geogebra.org/3d/hpuwnyvd?embed" width="800" height="700" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 
 ## Conjunto Generador
