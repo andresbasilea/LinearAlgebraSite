@@ -131,8 +131,11 @@ A = -3B + 2C
 $$
 
 
-#### Ejercicio 2 (en clase)
+#### Ejercicio 2:
 
+Sean el espacio vectorial $\mathbb{R}^2$ y $S = \{(1, -1), (3, 0), (2, 1)\}$ un subconjunto de $\mathbb{R}^2$. Exprese de dos maneras diferentes al vector $\bar{v} = (5, 1)$ como una combinación lineal de los vectores de $S$.
+
+<iframe src="https://www.geogebra.org/graphing/vetmws2w?embed" width="700" height="700" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 ## Dependencia Lineal
 
@@ -176,11 +179,24 @@ solo se satisface cuando $\alpha_1 = \alpha_2 = \ldots = \alpha_n = 0$. En caso 
 >  \; \bar{0} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix} 
 >  $$
 
-
-
 ### Algunos teoremas sobre dependencia lineal
 - Todo conjunto de vectores que contiene al vector cero es linealmente dependiente.
 - Si $W$ es un conjunto linealmente independiente, entonces cualquier subconjunto de $W$ es linealmente independiente
+
+
+#### Ejercicio 1: 
+
+Determinar si el conjunto: 
+
+$$ 
+A = \{(1,1,-1), (2,-3,1), (3,-4,6)\}
+$$
+es linealmente dependiente o independiente:
+
+
+
+
+
 
 
 
