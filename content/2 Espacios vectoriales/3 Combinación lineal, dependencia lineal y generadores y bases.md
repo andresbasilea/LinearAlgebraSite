@@ -327,8 +327,23 @@ para todo $\vec{x} \in V$.
 > \bar{x} = \begin{pmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{pmatrix}
 > $$
 
+#### Ejercicio 1 (en clase)
 
-#### Ejercicio 1
+Determinar si el conjunto 
+$$
+B = {(-2,0,0), (0,1,2), (0,0,-1)}
+$$
+es un generador de $\mathbb{R^3}$
+
+#### Ejercicio 2 (en clase)
+
+Determinar si el conjunto 
+$$
+C = {(-2,0,0), (0,1,2)}
+$$
+es un generador de $\mathbb{R^3}$
+
+#### Ejercicio 3
 
 Determinar si el conjunto 
 $$
@@ -432,6 +447,9 @@ $$
 Si $V={\vec{0}}$ , entonces $Dim V=0$
 
 
+- Todas las bases de un espacio vectorial tienen el mismo número de vectores
+- La dimensión de un espacio vectorial es el número de vectores que contiene cualquiera de sus bases
+- El único espacio vectorial de dimensión cero es el que contiene únicamente al vector cero. 
 
 ## Pero... ¿cómo se ve el espacio generado por dos vectores linealmente independientes en dos dimensiones?
 <div style="position:relative;padding-bottom:56.25%;">
@@ -483,15 +501,6 @@ Si $V={\vec{0}}$ , entonces $Dim V=0$
 
 
 
-#### Ejercicio (en clase)
-
- Sea el conjunto
- $$
- A = \{(-1, k, 2), (-1, 1, -1), (1, 0, 2)\}
- $$
- 1) Determine el valor de $k$ para que el conjunto $A$ sea linealmente dependiente. 
- 2) **Con el valor obtenido en el inciso anterior, obtenga el espacio vectorial que genera el conjunto $A$.** 
- 3) **Determine una base y la dimensión del espacio vectorial obtenido en el inciso anterior.** 
 
 
 
@@ -508,6 +517,57 @@ $$
 (\bar{v})_B = (\alpha_1, \alpha_2, \ldots, \alpha_n)^T
 $$
 se le llama vector de coordenadas de $\bar{v}$ en la base $B$.
+
+
+![[BasisCoordinates.mov]]
+<small> Animación de:
+https://www.youtube.com/watch?v=P2LTAUO1TdA&t=55s&ab_channel=3Blue1Brown
+</small>
+
+#### Ejercicio 1 (en clase)
+
+Determinar una base de los siguientes espacios vectoriales: 
+
+- $V_1 = \{(x,y,z)| \; 3x-y+2z = 0 , x,y,z \; \in \; \mathbb{R}\}$
+
+- $V_2 = \left\{ \begin{pmatrix} 2a & -a \\ 0 & b \end{pmatrix} \middle| a, b \in \mathbb{R} \right\}$
+
+- $V_3 = \left\{ (x, 2x, 0) \mid x \in \mathbb{R} \right\}$
+
+- $V_4 = \mathbb{R}^3 = \left\{ (x, y, z) \mid x, y, z \in \mathbb{R} \right\}$
+
+- $V_5 = P_2 = \left\{ ax^2 + bx + c \mid a, b, c \in \mathbb{R} \right\}$
+
+- $V_6 = M_{2\times2} = \left\{ \begin{pmatrix} a & b \\ c & d \end{pmatrix} \middle| a, b, c, d \in \mathbb{R} \right\}$
+
+
+#### Ejercicio 2
+
+Obtener una base y la dimensión de $\mathbb{C}$ sobre
+a) $\mathbb{C}$
+b) $\mathbb{R}$
+
+$\mathbb{C} = \left\{ z \mid z = a + bi; a, b \in \mathbb{R} \right\}$
+
+>[!note] Sobre $\mathbb{C^n}$
+>En general $\mathbb{C^n}$ es un espacio vectorial sobre el campo de los reales y sobre el campo de los complejos. No es el caso de $\mathbb{R^n}$, el cual es espacio vectorial sobre los reales, pero no sobre los complejos.
+
+
+
+
+#### Ejercicio 3 (en clase)
+
+ Sea el conjunto
+ $$
+ A = \{(-1, k, 2), (-1, 1, -1), (1, 0, 2)\}
+ $$
+ 1) Determine el valor de $k$ para que el conjunto $A$ sea linealmente dependiente. 
+ 2) **Con el valor obtenido en el inciso anterior, obtenga el espacio vectorial que genera el conjunto $A$.** 
+ 3) **Determine una base y la dimensión del espacio vectorial obtenido en el inciso anterior.** 
+
+
+
+
 
 
 <script src="https://giscus.app/client.js"

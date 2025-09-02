@@ -65,6 +65,8 @@ jobs:
           find public/ -type f -name "linearCombination" -exec mv {} {}.mov \;
           find public/ -type f -name "linearCombination" -exec mv {} {}.mp4 \;
           find public/ -type f -name "linearCombination" -exec mv {} {} \;
+          find public/ -type f -name "BasisCoordinates" -exec mv {} {}.html \;
+
 
 
 

@@ -19,6 +19,10 @@ Los espacios vectoriales isomorfos solo difieren en la naturaleza de sus element
 - Dos espacios vectoriales de igual dimensión son isomorfos. 
 
 
+#### Ejercicio 
+
+El espacio $W$ es generado por el conjunto $\left\{ x^2 + 7x + 4, -2x^2 - 8x - 5, 3x^2 + 9x + 6 \right\}$,  determinar una base y la dimensión de $W$.
+
 
 
 <script src="https://giscus.app/client.js"
