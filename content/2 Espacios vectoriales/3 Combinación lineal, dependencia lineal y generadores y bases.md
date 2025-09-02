@@ -541,18 +541,18 @@ Determinar una base de los siguientes espacios vectoriales:
 - $V_6 = M_{2\times2} = \left\{ \begin{pmatrix} a & b \\ c & d \end{pmatrix} \middle| a, b, c, d \in \mathbb{R} \right\}$
 
 
-#### Ejercicio 2
+#### Ejercicio 2 (en clase)
 
 Obtener una base y la dimensión de $\mathbb{C}$ sobre
+
 a) $\mathbb{C}$
+
 b) $\mathbb{R}$
 
 $\mathbb{C} = \left\{ z \mid z = a + bi; a, b \in \mathbb{R} \right\}$
 
 >[!note] Sobre $\mathbb{C^n}$
 >En general $\mathbb{C^n}$ es un espacio vectorial sobre el campo de los reales y sobre el campo de los complejos. No es el caso de $\mathbb{R^n}$, el cual es espacio vectorial sobre los reales, pero no sobre los complejos.
-
-
 
 
 #### Ejercicio 3 (en clase)
@@ -566,7 +566,26 @@ $\mathbb{C} = \left\{ z \mid z = a + bi; a, b \in \mathbb{R} \right\}$
  3) **Determine una base y la dimensión del espacio vectorial obtenido en el inciso anterior.** 
 
 
+#### Ejercicio 4 (en clase)
 
+Obtener las coordenadas del vector $\vec{x}$ = $(4,5)$ en las bases: 
+1) $B_1 = \{(1,0), (0,1)\}$
+2) $B_2 = \{(2,1), (-1,1)\}$
+
+![[Screenshot 2025-09-02 at 3.44.24 p.m..png]]
+
+
+#### Ejercicio 5 (en clase)
+
+Sean el espacio vectorial:
+
+$P = \left\{ at^2 + bt + c \mid a, b, c \in \mathbb{R} \right\}$
+
+y el conjunto $A = \left\{ t^2 + 4t - 3, \quad t^2 - 2t + 5, \quad 2t^2 - 3t, \quad t + 3 \right\}$ 
+
+1) Determine si el conjunto $A$ es generador del espacio vectorial $P$.
+2) En caso afirmativo, obtenga una base de dicho espacio.
+3) Determine las coordenadas del vector $P_1 = t^2 + 2t + 1$, referidas a la base obtenida en el inciso anterior.
 
 
 
