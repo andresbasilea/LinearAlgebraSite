@@ -291,6 +291,7 @@ para todo $\vec{x} \in V$.
 
 
 - **Si un vector se expresa como combinación lineal de un conjunto generador, existen infinitas posibilidades de expresar ese vector.**
+	- Esto es parecido a lo que veíamos en el ejercicio 2 de combinaciones lineales, donde un mismo vector (el vector $(5,1)$) podía ser representado de múltiples formas a través de combinaciones lineales de los vectores del conjunto $S$.
 
 
 ![[Screenshot 2025-08-31 at 9.05.58 p.m..png]]
@@ -386,7 +387,7 @@ $$
 \beta + \delta = y \; \dots(2)
 $$
 $$
-\beta - \gamma - \delta = z  \; \dots (3)
+2\beta - \gamma - \delta = z  \; \dots (3)
 $$
 
 
@@ -416,7 +417,12 @@ $$
 
 **Como existen los escalares, el conjunto $A$ es generador de $\mathbb{R}^3$**
 
-Aquí podríamos dar por concluido el ejercicio. Pero si quisiéramos comprobar: 
+>[!Interesante] ¿Qué puedes concluir sobre la **dependencia o independencia lineal** del conjunto A del ejercicio anterior? 
+> **-**¿$\mathbb{R^3}$ se puede **generar con otro conjunto de vectores**? 
+> 
+> **-**¿Se te ocurre algún conjunto **linealmente independiente** para generar $\mathbb{R^3}$?
+> 
+> **-**¿Qué pasa si tienes 4 vectores para generar un espacio de tres dimensiones? ¿Todos los vectores aportan información para generar el espacio? ¿Existe cierta *redundancia* entre vectores linealmente dependientes?
 
 
 ## Base
@@ -434,9 +440,9 @@ Se define como base de un espacio vectorial $V$, a cualquier subconjunto $B$ de 
 
 
 ### Algunos teoremas
-- Sea $V$ un espacio vectorial sobre un campo $K$. Si $B = \{\vec{v_1}, \vec{v_2}, ..., \vec{v_n}\}$ es una base de $V$, entonces cualquier conjunto de vectores de $V$ con más de $n$ elementos es linealmente dependiente. 
+- Sea $V$ un espacio vectorial sobre un campo $K$. Si $B = \{\vec{v_1}, \vec{v_2}, ..., \vec{v_n}\}$ es una base de $V$, entonces cualquier conjunto de vectores de $V$ **con más de $n$ elementos** es **linealmente dependiente.** 
 - Si un espacio vectorial $V$ tiene una base con $n$ vectores, entonces cualquier base de $V$ deberá contener exactamente $n$ vectores. 
-- Si $V$ es un espacio vectorial de dimensión $n$, entonces cualquier conjunto linealmente independiente que contenga $n$ vectores del espacio $V$ es una base de dicho espacio. 
+- Si $V$ es un espacio vectorial de dimensión $n$, entonces **cualquier conjunto linealmente independiente que contenga $n$ vectores del espacio $V$** es una **base** de dicho espacio. 
 
 ## Dimensión de un espacio vectorial
 
@@ -447,7 +453,7 @@ $$
 Si $V={\vec{0}}$ , entonces $Dim V=0$
 
 
-- Todas las bases de un espacio vectorial tienen el mismo número de vectores
+- Todas las bases de un mismo espacio vectorial tienen el mismo número de vectores
 - La dimensión de un espacio vectorial es el número de vectores que contiene cualquiera de sus bases
 - El único espacio vectorial de dimensión cero es el que contiene únicamente al vector cero. 
 
@@ -575,6 +581,13 @@ Obtener las coordenadas del vector $\vec{x}$ = $(4,5)$ en las bases:
 ![[Screenshot 2025-09-02 at 3.44.24 p.m..png]]
 
 
+Para el primer inciso, vemos que el vector de coordenadas es $(4,5)$, debido a que se encuentra referido a la base canónica de $\mathbb{R^2}$. 
+No obstante, para el segundo inciso, como la base es diferente a la canónica, vemos que el vector $\vec{x}$ ahora sería igual a multiplicar el primer vector de la base $B_2$ por 3 y sumarle el segundo vector multiplicado por 2. En coordenadas, quedaría como:
+$$
+(\vec{x})_{B_2} = [(4,5)]_{B_2} = (3,2)^T
+$$
+
+![[Screenshot 2025-09-02 at 7.13.49 p.m..png]]
 #### Ejercicio 5 (en clase)
 
 Sean el espacio vectorial:
@@ -586,6 +599,7 @@ y el conjunto $A = \left\{ t^2 + 4t - 3, \quad t^2 - 2t + 5, \quad 2t^2 - 3t, \q
 1) Determine si el conjunto $A$ es generador del espacio vectorial $P$.
 2) En caso afirmativo, obtenga una base de dicho espacio.
 3) Determine las coordenadas del vector $P_1 = t^2 + 2t + 1$, referidas a la base obtenida en el inciso anterior.
+
 
 
 
