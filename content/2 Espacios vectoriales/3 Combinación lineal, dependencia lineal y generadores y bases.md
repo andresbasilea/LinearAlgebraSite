@@ -332,7 +332,7 @@ para todo $\vec{x} \in V$.
 
 Determinar si el conjunto 
 $$
-B = {(-2,0,0), (0,1,2), (0,0,-1)}
+B = \{(-2,0,0), (0,1,2), (0,0,-1)\}
 $$
 es un generador de $\mathbb{R^3}$
 
@@ -340,7 +340,7 @@ es un generador de $\mathbb{R^3}$
 
 Determinar si el conjunto 
 $$
-C = {(-2,0,0), (0,1,2)}
+C = \{(-2,0,0), (0,1,2)\}
 $$
 es un generador de $\mathbb{R^3}$
 
