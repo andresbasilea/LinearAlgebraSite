@@ -14,10 +14,68 @@ $$
 $$
 
 
-<br>
+>[!note] Matriz de transición y transformaciones lineales
+>En el capítulo 3 veremos cómo esta matriz de transición entre bases se relaciona con las transformaciones lineales, además de una representación gráfica de este proceso. 
+
+
+![[Screenshot 2025-09-07 at 9.04.31 a.m..png]]
+
+
+### Procedimiento para obtener la matriz de transición
+
+Obtener $M_{B_2}^{B_1}$ dadas:  
+$$
+B_1 = \{\vec{v}_1, \vec{v}_2, \vec{v}_3, \ldots, \vec{v}_n\} 
+$$
+
+$$
+B_2 = \{\vec{w}_1, \vec{w}_2, \vec{w}_3, \ldots, \vec{w}_n\}
+$$
+
+Escribir los vectores de la base $B_1$ como combinación lineal de los vectores de la base $B_2$. 
+
+$$
+\vec{v}_1 = \alpha_{11}\vec{w}_1 + \alpha_{12}\vec{w}_2 + \alpha_{13}\vec{w}_3 + \dots + \alpha_{1n}\vec{w}_n 
+$$
+
+$$
+\vec{v}_2 = \alpha_{21}\vec{w}_1 + \alpha_{22}\vec{w}_2 + \alpha_{23}\vec{w}_3 + \dots + \alpha_{2n}\vec{w}_n 
+$$
+ $$
+ \vec{v}_3 = \alpha_{31}\vec{w}_1 + \alpha_{32}\vec{w}_2 + \alpha_{33}\vec{w}_3 + \dots + \alpha_{3n}\vec{w}_n 
+ $$
+
+$$
+\vdots
+$$
+  $$
+  \vec{v}_n = \alpha_{n1}\vec{w}_1 + \alpha_{n2}\vec{w}_2 + \alpha_{n3}\vec{w}_3 + \dots + \alpha_{nn}\vec{w}_n
+$$
+
+
+
+Entonces
+$$
+[\vec{v}_1]_{B_2} = \begin{pmatrix} \alpha_{11} \\ \alpha_{12} \\ \alpha_{13} \\ \vdots \\ \alpha_{1n} \end{pmatrix}, \quad [\vec{v}_2]_{B_2} = \begin{pmatrix} \alpha_{21} \\ \alpha_{22} \\ \alpha_{23} \\ \vdots \\ \alpha_{2n} \end{pmatrix}, \quad [\vec{v}_3]_{B_2} = \begin{pmatrix} \alpha_{31} \\ \alpha_{32} \\ \alpha_{33} \\ \vdots \\ \alpha_{3n} \end{pmatrix}, \quad \dots, \quad [\vec{v}_n]_{B_2} = \begin{pmatrix} \alpha_{n1} \\ \alpha_{n2} \\ \alpha_{n3} \\ \vdots \\ \alpha_{nn} \end{pmatrix}
+$$
+
 <br>
 
-#### Ejercicio
+$$
+M_{B_2}^{B_1} = \left( [\vec{v}_1]_{B_2} \quad [\vec{v}_2]_{B_2} \quad [\vec{v}_3]_{B_2} \quad \dots \quad [\vec{v}_n]_{B_2} \right)
+$$
+$$
+M_{B_2}^{B_1} = \begin{pmatrix}
+\alpha_{11} & \alpha_{21} & \alpha_{31} & \dots & \alpha_{n1} \\
+\alpha_{12} & \alpha_{22} & \alpha_{32} & \dots & \alpha_{n2} \\
+\alpha_{13} & \alpha_{23} & \alpha_{33} & \dots & \alpha_{n3} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+\alpha_{1n} & \alpha_{2n} & \alpha_{3n} & \dots & \alpha_{nn}
+\end{pmatrix}
+$$
+
+
+#### Ejercicio 1
 
 Sean
 
@@ -260,6 +318,17 @@ $$
 $$
 \therefore \quad \vec{v}_2 = (1, -1, 2) 
 $$
+
+
+
+
+#### Ejercicio 2
+
+Sean $A = \{\vec{a}_1, \vec{a}_2, \vec{a}_3\} = \{x^2+x-3, 3x^2+x-5, x^2-2x+2\}$ y $B = \{\vec{b}_1, \vec{b}_2, \vec{b}_3\}$ dos bases del espacio vectorial $$P = \{ax^2+bx+c \mid a,b,c \in \mathbb{R}\}$$ Si se sabe que: $$(\vec{a}_1)_B = (1, 0, 1), \quad (\vec{a}_2)_B = (2, 1, 2), \quad (\vec{a}_3)_B = (-1, 1, 0)$$ obtenga los vectores de la base $B$.
+
+
+
+
 
 
 
