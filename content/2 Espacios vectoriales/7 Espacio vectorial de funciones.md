@@ -1,5 +1,8 @@
 
-### Espacio vectorial de funciones
+
+
+
+### Espacio vectorial de funciones reales de variable real
 
 El análisis que se hará de las funciones será desde el punto de vista algebraico y este se limitará al caso de las funciones reales de variable real. Este tipo de funciones constituyen un espacio vectorial para las operaciones de adición y multiplicación por un escalar:
 
@@ -9,6 +12,37 @@ El análisis que se hará de las funciones será desde el punto de vista algebra
 
 Este espacio tiene un especial interés por tratarse de un espacio de dimensión infinita.
 
+El espacio vectorial de funciones reales de variable real comprende a todas las funciones reales que están definidas sobre el campo de los reales. Algunos elementos que pertenecen a este espacio vectorial, podrían ser los vectores: 
+
+- $cos (x)$
+- $sin^2(x)$
+- $x^2 + x$
+- $e^x$
+- $ln(x)$
+
+Entre infinitos otros. 
+
+Pero... en este caso, al tener un espacio vectorial de dimensión infinita, ¿cómo se vería una de sus bases? Es decir, sabiendo que **una base** es un conjunto de vectores linealmente independiente que permite generar un espacio vectorial a partir de combinaciones lineales de sus elementos, ¿cuáles serían esos elementos de la base? ¿Qué vectores multiplicados por escalares nos podrían dar a su vez el vector $e^x$, pero también $cos(x)$?
+
+No lo veremos muy a detalle en este curso, pero las bases de estos espacios vectoriales infinitos de funciones podrían ser las series que ya conocen, como:
+- Serie de Fourier
+	- Combinación de funciones seno y coseno
+- Serie de Maclaurin / Taylor
+	- Combinación de suma de potencias de polinomios
+
+
+![[Pasted image 20250916134755.png]]
+<small>Aproximación de distintas funciones a partir de la suma infinita de senos y cosenos (los vectores de una base del espacio vectorial de funciones reales de variable real)</small>
+
+
+**Los objetivos principales en este curso serán:** 
+- conocer estos espacios vectoriales
+- determinar la independencia o dependencia lineal de subconjuntos finitos de vectores del espacio vectorial de funciones reales de variable real. Por ejemplo, conocer la dependencia o independencia lineal del conjunto de vectores: $\{x^2+x, ln(x), cos(x)\}$
+
+En realidad, ya hemos trabajado con algunos subespacios del espacio vectorial de funciones reales de variable real. Por ejemplo, trabajamos con el espacio vectorial de polinomios de grado dos ($ax^2+bx+c$). 
+
+
+Ahora bien, existen dos formas de conocer la dependencia o independencia lineal de un conjunto de funciones: planteando la **ecuación de dependencia lineal** (mismo procedimiento que ya hemos realizado anteriormente), o utilizando el **criterio del Wronskiano.** 
 
 ### Criterio del Wronskiano
 
