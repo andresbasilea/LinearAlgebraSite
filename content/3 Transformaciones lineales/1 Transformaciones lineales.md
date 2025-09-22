@@ -181,6 +181,19 @@ $$
 
 
 
+
+#### Ejercicio 
+
+Sean el espacio vectorial real $P = \{ax^2+bx+c \mid a,b,c \in \mathbb{R}\}$ y $D: P \to P$ la transformación cuya regla de correspondencia es
+$$D(p(x)) = \frac{dp(x)}{dx} \quad \forall p(x) \in P$$
+Determinar:
+
+- Si D es una transformación lineal
+- El núcleo de D
+- El recorrido de D
+- Si existe, la inversa de D
+
+
 <script src="https://giscus.app/client.js"
         data-repo="andresbasilea/LinearAlgebraSite"
         data-repo-id="R_kgDOO-oDkA"
