@@ -10,7 +10,7 @@ Sean $V$ y $W$ espacios vectoriales definidos sobre el mismo campo $K$. La funci
 Sean $V$ y $W$ espacios vectoriales definidos sobre un campo $K$. La función $T$: $V \rightarrow W$ se llama transformación lineal si se cumplen las siguientes dos propiedades: 
 
 $\forall \: \vec{u}, \:  \vec{v} \: \in \: V$ y $\forall \: \alpha \: \in \: K$
-- **Aditividad**:
+- **Superposición**:
 	- $T(\vec{u} + \vec{v}) = T(\vec{u}) + T(\vec{v})$ 
 - **Homogeneidad**: 
 	-  $T(\alpha\vec{u}) = \alpha T(\vec{u})$
