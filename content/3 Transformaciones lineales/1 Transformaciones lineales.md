@@ -43,6 +43,13 @@ Sean $V$ y $W$ espacios vectoriales y $T: V \rightarrow W$ una transformación l
 - Se llama recorrido de $T$ al conjunto de todas las imágenes de los vectores del dominio, el cual se denota como $T(V)$ y es tal que: $$ T(V) = \{ T(\vec{v}) \mid \vec{v} \in V \} $$
 - Se llama núcleo de $T$ al conjunto de vectores del dominio, cuya imagen es el vector cero de $W$, el cual se denota como $N(T)$ y es tal que: $$ N(T) = \{ \vec{v} \in V \mid T(\vec{v}) = \vec{0}_W \} $$
 
+![[Screenshot 2025-09-23 at 8.56.51 a.m..png]]
+
+**El núcleo SIEMPRE tiene la forma del espacio vectorial de origen**. En la imagen anterior, el núcleo serían los vectores $\vec{v_1}$ y $\vec{v_2}$ del espacio vectorial $V$. 
+
+**El recorrido SIEMPRE tiene la forma del espacio vectorial de destino (codominio)**.
+
+
 ### Algunos teoremas sobre transformaciones lineales
 
 Si $T: V \rightarrow W$ es una transformación lineal, entonces: \
@@ -181,8 +188,93 @@ $$
 
 
 
+#### Ejercicio 1
 
-#### Ejercicio 
+Sea la transformación $R: \mathbb{R}^5 \to \mathbb{R}^3$ definida por
+$$ R(x,y,z,s,t) = (x+2y+z-3s+4t, 2x+5y+4z-5s+5t, x+4y+5z-s-2t) $$
+Determinar el recorrido de la transformación $R$
+
+**Paso 1**: Dar una base del dominio. Se sugiere proponer la base canónica: 
+
+$$
+B = \{(1,0,0,0,0), (0,1,0,0,0), (0,0,1,0,0), (0,0,0,1,0), (0,0,0,0,1) \}
+$$
+
+**Paso 2**: Aplicar la transformación a cada uno de los vectores de la base propuesta
+
+
+$$
+R(1,0,0,0,0) = (1,2,1)
+$$
+$$
+R(0,1,0,0,0) = (2,5,4)
+$$
+$$
+R(0,0,1,0,0) = (1,4,5) 
+$$
+$$
+R(0,0,0,1,0) = (-3,-5,-1)
+$$
+$$
+R(0,0,0,0,1) = (4,5,-2)
+$$
+
+
+
+Un generador del recorrido es:
+
+$$
+Generador = \{(1,2,1), (2,5,4), (1,4,5), (-3,-5,-1), (4,5,-2)\}
+$$
+
+**Paso 3**: Obtener la base estándar a partir del generador anterior por medio del espacio renglón
+
+$$
+\begin{pmatrix}
+1 & 2 & 1 \\
+2 & 5 & 4 \\
+1 & 4 & 5 \\
+-3 & -5 & -1 \\
+4 & 5 & -2
+\end{pmatrix}
+\sim \dots \sim
+\begin{pmatrix}
+1 & 0 & -3 \\
+0 & 1 & 2 \\
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{pmatrix}
+$$
+
+Por lo tanto, la base estándar es: 
+
+$$
+B = \{(1,0,-3), (0,1,2) \}
+$$
+
+**Paso 4**: Obtener el vector genérico a partir de la base
+
+$$
+\vec{x} = a(1,0,-3) + b(0,1,2)
+$$
+$$
+\vec{x} = (a, b, -3a+2b)
+$$
+
+**Paso 5**: Escribir el recorrido
+
+$$
+Recorrido = \{(a, b, -3a+2b) \; | \; a,b \; \in \; \mathbb{R}\}
+$$
+
+$$
+Dimensión  \; del \; recorrido  = 2
+$$
+
+
+
+#### Ejercicio 2
 
 Sean el espacio vectorial real $P = \{ax^2+bx+c \mid a,b,c \in \mathbb{R}\}$ y $D: P \to P$ la transformación cuya regla de correspondencia es
 $$D(p(x)) = \frac{dp(x)}{dx} \quad \forall p(x) \in P$$
