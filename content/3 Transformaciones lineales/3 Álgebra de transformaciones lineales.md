@@ -82,6 +82,38 @@ $$
 $$
 
 
+#### Ejercicio 1
+
+Obtener la regla de correspondencia de las transformaciones:
+- $T + S$ 
+- $4T$ 
+- $3T - 2S$
+
+ Si $T: \mathbb{R}^2 \to \mathbb{R}^3$ y $S: \mathbb{R}^2 \to \mathbb{R}^3$ están dadas por 
+ $$
+ T(x, y) = (x + y, 2x, y)
+ $$
+ 
+ $$
+ S(x, y) = (-3x + y, 4x, 2y)
+ $$
+ 
+#### Ejercicio 2
+
+Obtener la matriz asociada a las transformaciones $T$ y $S$ del ejemplo anterior referidas a las bases:
+$$
+A = \{(1, 0), (1, -1)\}
+$$
+$$
+B = \{(1, 1, 0), (0, 1, -2), (1, 0, -3)\}
+$$
+de $\mathbb{R}^2$ y $\mathbb{R}^3$ respectivamente. Además, obtener $M_B^A(T + S)$ y determinar la relación entre las matrices obtenidas.
+
+
+
+
+
+
 ### Teorema
 
 Sean $V$ y $W$ dos espacios vectoriales definidos sobre un campo $K$, y sean $A$ y $B$ bases de $V$ y $W$, respectivamente. Si $T$ y $H$ son dos transformaciones lineales cualesquiera de $V$ en $W$, entonces: 
@@ -101,6 +133,20 @@ $$
  M_C^A (H \circ T) = M_C^B (H) M_B^A (T)
  $$
 
+
+#### Ejercicio 3
+
+Sean las transformaciones $T: \mathbb{R}^2 \to \mathbb{R}^4$ y $S: \mathbb{R}^4 \to \mathbb{R}^2$ dadas por:
+
+$$
+T(x, y) = (2x + y, -y, x, -3x - y) 
+$$
+
+ $$
+ S(x, y, z, t) = (2x - y + t, 4y + z - t)
+ $$
+
+ Determinar, si es posible, la regla de correspondencia de $T \circ S$ y $S \circ T$.
 
 
 ## Transformaciones lineales inyectivas, suprayectivas y biyectivas
