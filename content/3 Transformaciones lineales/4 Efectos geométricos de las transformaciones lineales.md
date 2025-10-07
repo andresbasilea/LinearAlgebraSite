@@ -59,6 +59,18 @@ A lo largo del eje $y$ con $k > 0$:
 
 
 
+![[Screenshot 2025-10-06 at 9.48.05 p.m..png]]
+
+![[Screenshot 2025-10-06 at 9.48.26 p.m..png]]
+
+![[Screenshot 2025-10-06 at 9.48.54 p.m..png]]
+
+![[Screenshot 2025-10-06 at 9.49.12 p.m..png]]
+
+
+
+
+
 <script src="https://giscus.app/client.js"
         data-repo="andresbasilea/LinearAlgebraSite"
         data-repo-id="R_kgDOO-oDkA"

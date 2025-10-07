@@ -159,6 +159,7 @@ Una transformación lineal es suprayectiva, si y sólo si, la dimensión del rec
 #### Transformación biyectiva
 Una transformación lineal es biyectiva, si y sólo si, es inyectiva y suprayectiva, es decir, si la dimensión del núcleo es igual a cero y la dimensión del recorrido es igual a la dimensión del codominio. 
 
+**En términos sencillos:** Es una correspondencia perfecta donde **cada vector del dominio se mapea a un vector único en el codominio**, y **todo el codominio es cubierto**. Las transformaciones biyectivas son las únicas que tienen una **transformación inversa**.
 
 
 ## Inversa de una transformación lineal
@@ -176,6 +177,7 @@ Donde $I_V$ e $I_W$ son transformaciones identidad en $V$ y $W$, respectivamente
 >[!custom] ¿Todas las matrices tienen inversa? 
 >No.
 >Sean $V$ y $W$ dos espacios vectoriales de dimensión finita, $T: V \rightarrow W$ una transformación lineal y $A, B$ bases de $V$ y $W$, respectivamente: 
+> -  $T^{-1}$ existe, si y solo si, T es biyectiva.
 > - $T^{-1}$ existe, si y solo si, $M_B^A (T)$ **es no singular.** 
 > - Si $T^{-1}$ existe, entonces $\left[ M_B^A (T) \right]^{-1} = M_A^B (T^{-1})$. 
 
