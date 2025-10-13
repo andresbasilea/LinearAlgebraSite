@@ -1,10 +1,19 @@
 ### Valores y vectores propios
 
-A las transformaciones lineales que se aplican de un espacio vectorial $V$ al mismo espacio $V$, se les conoce como operadores lineales.
+A las transformaciones lineales que se aplican de un espacio vectorial $V$ al mismo espacio $V$, se les conoce como **operadores lineales.**
 
 $$
 T: V \rightarrow V
 $$
+Algunos ejemplos: 
+$$
+T: \mathbb{R^2} \rightarrow \mathbb{R^2}
+$$
+$$
+\dfrac{d}{dx}: F \rightarrow F
+$$
+
+
 Para este tipo de transformaciones pueden existir vectores diferentes de cero que tienen la siguiente característica:
 
 $$
@@ -29,7 +38,39 @@ El vector característico tiene que ser diferente de cero, pero el valor caracte
 >[!interesante] Otros nombres para los vectores y valores propios
 >A los vectores y valores propios también se les llama *eigenvectores* y *eigenvalores* o *vectores y valores característicos*
 
+$$
+M_B^A(T)[\vec{v}]_A = [T(\vec{v})]_B
+$$
 
+Al tratarse de un operador lineal (donde el espacio vectorial del dominio y el espacio vectorial del codominio son iguaoles), podemos reescribir la expresión anterior de la siguiente manera. 
+$$
+T(\vec{v}) = \lambda \vec{v}
+$$
+$$
+M_A^A(T)[\vec{v}]_A = [\lambda \vec{v}]_A
+$$
+
+De la expresión anterior, queremos obtener los valores de $\lambda$ y $\vec{v}$ que satisfacen la ecuación. Del lado izquierdo de la expresión anterior tenemos una multiplicación de una matriz por un vector, pero del lado derecho tenemos un escalar multiplicando por un vector ($\lambda \vec{v}$). Por lo tanto, podemos reescribir la expresión utilizando la matriz identidad para convertir el lado derecho en una multiplicación matriz vector. 
+
+$$
+M_A^A(T)[\vec{v}]_A  =  \lambda I \;[\vec{v}_A]
+$$
+
+Pasamos restando el lado derecho de la ecuación: 
+$$
+M_A^A(T)[\vec{v}]_A - \lambda I [\vec{v}]_A = \vec{0}
+$$
+
+Y obtenemos: 
+$$
+(M_A^A(T) - \lambda I)[\vec{v}]_A = \vec{0} \quad \dots (1)
+$$
+$$
+P(\lambda) = \det(M_A^A(T) - \lambda I) \quad \dots (2)
+$$
+
+
+Donde $(1)$ es la **ecuación característica** que sirve para obtener **vectores propios** de un operador lineal. Y $(2)$ es el **polinomio característico** que sirve para obtener los **valores propios** de un operador lineal. 
 
 ### Teorema
 
