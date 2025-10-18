@@ -1,4 +1,8 @@
 
+
+![[Screenshot 2025-10-18 at 1.55.09 p.m..png]]
+
+
 ### Producto Interno
 Sea $V$ un espacio vectorial sobre un campo de definición complejo. Un producto interno es una función de $V \times V$ en $\mathbb{C}$ que asocia a cada pareja de vectores $\vec{u}$ y $\vec{v}$ de $V$ un escalar $(\vec{u} | \vec{v}) \in \mathbb{C}$, llamado el producto interno de $\vec{u}$ y $\vec{v}$, que satisface los siguientes axiomas:
 
