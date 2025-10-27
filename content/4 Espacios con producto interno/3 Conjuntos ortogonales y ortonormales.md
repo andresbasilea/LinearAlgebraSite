@@ -11,6 +11,13 @@ Si cada vector del conjunto $A$ tiene norma igual a uno, entonces al conjunto $A
 
 Es importante destacar que todo conjunto de vectores ortogonales no nulos, es linealmente independiente.
 
+![[Screenshot 2025-10-25 at 3.03.02 p.m..png]]
+
+
+
+
+
+
 ### Coordenadas de un vector con respecto a una base ortogonal y respecto a una base ortonormal 
 
 Sea $V$ un espacio vectorial con producto interno y sea $B = \{ \vec{v}_1, \vec{v}_2, \ldots, \vec{v}_n \}$ una base ortogonal de $V$.
@@ -78,7 +85,7 @@ $$
   allowfullscreen>
 </iframe>
 
-
+https://www.youtube.com/watch?v=qrix-nH7fjo
 
 
 

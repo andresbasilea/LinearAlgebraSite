@@ -82,6 +82,17 @@ $$
 
 
 
+### Resumen de términos vistos hasta el momento
+
+| Forma general    | En $\mathbb{R^2}$ y $\mathbb{R^3}$ con el producto interno usual |
+| ---------------- | ---------------------------------------------------------------- |
+| Producto interno | Producto punto                                                   |
+| Norma            | Módulo                                                           |
+| Distancia        | Distancia                                                        |
+| Ángulo           | Ángulo                                                           |
+| Vector normal    | Vector unitario                                                  |
+
+
 
 <script src="https://giscus.app/client.js"
         data-repo="andresbasilea/LinearAlgebraSite"
